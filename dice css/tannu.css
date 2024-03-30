@@ -1,0 +1,50 @@
+#main{
+    width: 70%;
+    background-color: black;
+}
+#first{
+    background-color: aquamarine;
+}
+#second{
+    background-color: aqua;
+}
+#third{
+    background-color: blue;
+}
+#heading1{
+    background-color: brown;
+    color: cadetblue;
+    font-style: italic;
+}
+#heading2{
+    background-color: chartreuse;
+    color: beige;
+    font-style: initial;
+
+}
+#heading3{
+    background-color: blueviolet;
+    color: brown;
+    font-style: unset;
+    
+}
+#heading4{
+    background-color: aliceblue;
+    color: cornflowerblue;
+    
+}
+#heading5{
+    background-color: aqua;
+    color: darkgreen;
+}
+#heading6{
+    background-color: darkgoldenrod;
+    color: chartreuse;
+
+}
+#first>p{ background-color: burlywood;
+color: aquamarine;}
+#first>p{ color: whitesmoke;}
+#third>p{color: deeppink;
+background-color: yellowgreen;}
+
