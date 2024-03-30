@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #maindiv{
+          background-color: grey;
+          height: 100%;
+          width: 100%;
+          color: brown;
+          font-size: 20px;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: 200px 200px;
+          gap: 0rem;
+        }
+        #maindiv>div{
+            background-color:white;
+            display: flex;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid whitesmoke;
+        }
+        #divsub1{
+            grid-column-start:1 ;
+            grid-column-end: 4;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 4rem;
+            background-color: red;
+            height: 8rem;
+        }
+      
+        img{
+            width: 4em;
+            height: auto;
+            /* margin-left: -16em; */
+            margin-right: -3.8em;
+        }
+        h2{
+            color: rgb(117, 115, 115);
+            font-family: sans-serif;
+        }
+        #microsoft{
+            font-size: 19px;
+            font-family: sans-serif;
+            margin-right: 1.5em;
+        }
+        /* #microsoft::after{
+         content: "";
+         background-color: red;
+         width: 2em;
+         display: block;
+         height: .2em;
+        } */
+
+        #teams{
+            font-size: 19px;
+            font-family: sans-serif;
+            margin-right: 1.5em;
+        }
+        #copilot{
+            font-size: 19px;
+            font-family: sans-serif;
+            margin-right: 1.5em;
+        }
+        #windows{
+            font-size: 19px;
+            font-family: sans-serif;
+            margin-right: 1.5em;
+        }
+        #surface{
+            font-size: 19px;
+            font-family: sans-serif;
+            margin-right: 1.5em;
+        }
+        #xbox{
+            font-size: 19px;
+            font-family: sans-serif;
+            margin-right: 1.5em;
+        }
+        #support{
+            font-size: 19px;
+            font-family: sans-serif;
+            margin-right: 4.5em;
+        }
+        #all{
+            font-size: 19px;
+            font-family: sans-serif;
+            margin-right: 4.5em;
+            margin-left: 4em;
+            position: relative;
+        }
+        #all:hover{
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        #all::after{
+            content: "";
+            background-color:transparent;
+            display: block;
+            width: 100%;
+            height: .3em;
+            transition: ease 1.5s;
+        }
+        #all:hover:after{
+        background-color: red;
+        }
+        #table{
+            display: none;
+            background-color: black;
+            color: whitesmoke;
+            font-size: 18px;
+            width: 75em;
+            height: 27em;
+            position: absolute;
+            left: -36.5em;
+            top: 2em;
+            padding: 0em 2em;
+            transition: ease 1.5s;
+        }
+        #all:hover #table{
+            display: block;
+        }
+        .td{
+            color: red;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        #search{
+        font-size: 19px;
+        font-family: sans-serif;  
+        margin-left: 5em;
+        }
+        #cart{
+        font-size: 19px;
+        font-family: sans-serif;  
+        margin-left: -5em;
+        }
+        #sign{
+        font-size: 19px;
+        font-family: sans-serif;  
+        margin-left: -5em;
+        }
+      
+        /* #divsub6{
+            grid-column-start:1 ;
+            grid-column-end: 4;
+            
+        }
+        #divsub2{
+            grid-row-start:2 ;
+            grid-row-end: 4;
+            
+        }
+        #divsub4{
+            grid-row-start:2 ;
+            grid-row-end: 4;
+            
+        } */ */
+        
+
+
+
+    </style>
+</head>
+<body>
+   <div id="maindiv">
+    <div id="divsub1">
+        <img src="microsoft1.png" alt="">
+     <h2>MICROSOFT</h2>
+     <nav id="nav">
+        <span id="microsoft">Microsot 365</span>    
+     <span id="teams">Teams</span>    
+     <span id="copilot">Copilot</span>    
+     <span id="windows">Windows</span>    
+     <span id="surface">Surface</span>    
+     <span id="xbox">Xbox</span>    
+     <span id="support">Support</span>
+     </nav>  
+    
+     <span id="all">All Microsoft 
+        <table id="table" border="0px" cellspacing="0px" >
+            <th >
+                <tr style="width: 150%; height: 60px;">
+                    <td class="td" >Software</td>
+                    <td class="td" >PC & Devices</td>
+                    <td class="td" >Entertainment</td>
+                    <td class="td" >Business</td>
+                    <td class="td" >Developer and IT</td>
+                    <td class="td" >other</td>
+                </tr>
+            </th>
+            <tbody>
+                <tr  style="width: 150%; height: 60px;">
+                    <td>Windows Apps</td>
+                    <td >Shop Xbox</td>
+                    <td>Xbox Game pass ultimate</td>
+                    <td>Microsoft Cloud</td>
+                    <td>Developer center</td>
+                    <td>Free downloads & security</td>
+                </tr>
+                <tr  style="width: 150%; height: 60px;">
+                    <td >Al</td>
+                    <td>Accessories</td>
+                    <td>Xbox Game Pass ultimate</td>
+                    <td>Microsoft security</td>
+                    <td>Documentation</td>
+                    <td>Education</td>
+                </tr>
+                <tr  style="width: 150%; height: 60px;">
+                    <td>One drive</td>
+                    <td></td>
+                    <td>Xbox games</td>
+                    <td> Azure</td>
+                    <td>Microsoft learn</td>
+                    <td>Gift cards</td>
+                </tr>
+                <tr  style="width: 150%; height: 60px;">
+                    <td>Outlook</td>
+                    <td></td>
+                    <td>PC Games</td>
+                    <td>Dynamics</td>
+                    <td>Microsoft Tech Community</td>
+                    <td>Licensing</td>
+                   
+                </tr>
+                <tr  style="width: 150%; height: 60px;">
+                    <td>Skype</td>
+                    <td></td>
+                    <td>Windows digital games</td>
+                    <td>Microsoft 365 for Business</td>
+                    <td>Azure marketplace</td>
+                    <td></td>
+                </tr>
+                <tr  style="width: 150%; height: 60px;">
+                    <td>Onenote</td>
+                    <td></td>
+                    <td></td>
+                    <td>Microsoft Industry</td>
+                    <td>App source</td>
+                    <td></td>
+                </tr>
+                <tr  style="width: 150%; height: 60px;">
+                    <td>Microsoft Teams</td>
+                    <td></td>
+                    <td></td>
+                    <td>Microsoft Power Platform</td>
+                    <td>Visual Code</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+     </span>
+     
+     <span id="search">Search </span>
+     <span id="search1"><i class='bx bx-search'></i></span>
+     <span id="cart">Cart</span>
+     <span id="cart1"> <i class='bx bx-cart-add' ></i></span>
+     <span id="sign">Sign in</span>
+     
+         </div>
+    <!-- <div id="divsub2">item2</div>
+    <div id="divsub3">item3</div>
+    <div id="divsub4">item4</div>
+    <div id="divsub5">item5</div>
+    <div id="divsub6">item6</div>
+     -->
+   </div> 
+</body>
+</html>

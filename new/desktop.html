@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fjkjkdnf</title>
+    <style>
+        *{
+            border: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        #maindiv{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            background-color: bisque;
+            color:red;
+            font-size: bold;
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+        } 
+        #maindiv>div{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            font-family: sans-serif;
+            font-size: 20px;
+
+        }  
+        #divsub1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: yellow;
+        } 
+        #divsub2{
+            grid-column-start: 2;
+            grid-column-end: 7;
+            background-color:pink;
+        } 
+        #divsub3{
+            grid-column-start:1 ;
+            grid-column-end:7 ;
+           
+            background-color:blue;
+        } 
+        #divsub3{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        #divsub16{
+            grid-column-start:1 ;
+            grid-column-end:6 ;
+           /* height: 10rem; */
+            background-color:greenyellow;
+        } 
+        #divsub5{
+            grid-row-start: 4;
+            grid-row-end: 8 ;
+            background-color: purple;
+        }
+        #divsub8{
+            grid-column-start:4 ;
+            grid-column-end: 9;
+            background-color: pink;
+        }
+        #divsub11{
+            grid-column-start:4 ;
+            grid-column-end: 9;
+            background-color:yellow;
+        }
+        #divsub11{
+            grid-row-start: 8;
+            grid-row-end:10 ;
+        }
+        
+        </style>
+</head>
+<body>
+    <div id="maindiv">
+        <div id="divsub1">Header</div>
+        <div id="divsub2">Menu</div>
+        <div id="divsub3">3</div>
+        <div id="divsub4">4</div>
+        <div id="divsub5">5</div>
+        <div id="divsub6">6</div>
+        <div id="divsub7">7</div>
+        <div id="divsub8">8</div>
+        <div id="divsub9">9</div>
+        <div id="divsub10">10</div>
+        <div id="divsub11">11</div>
+        <div id="divsub12">12</div>
+        <div id="divsub13">13</div>
+        <div id="divsub14">14</div>
+        <div id="divsub15">15</div>
+        <div id="divsub16">Banner
+        </div>
+    </div>
+</body>
+</html>

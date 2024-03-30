@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>microsoft</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }  
+      #divmain{
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        padding: 15px;
+        background-color: whitesmoke;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        position: relative;
+      }
+      img{
+        height: 50px;
+        margin-left: 60px;
+        color: white;
+      }
+      nav{
+        display: flex;
+        gap: 30px;
+      }
+      h2{
+        position: absolute;
+        left: 125px;
+        top: 35px;
+        color: rgb(136, 132, 132);
+      }
+      #microsoft{
+        margin-left: 130px;
+        font-family: sans-serif;
+        font-size: 16px;
+      }
+      #microsoft:hover{
+        color: black;
+        font-weight: bold;
+      }
+      #microsoft::after{
+        content: "";
+        background-color:transparent;
+        display: block;
+        width: 94px;
+        height: 4px;
+        transition:ease 2s;
+      }
+      #microsoft:hover:after{background-color: #262626;
+
+      }
+      #teams{
+      
+        font-family: sans-serif;
+        font-size: 16px;
+      }
+      #teams:hover{
+        color: black;
+        font-weight: bold;
+      }
+      #teams::after{
+        content: "";
+        background-color:transparent;
+        display: block;
+        width: 50px;
+        height: 4px;
+        transition:ease 2s;
+      }
+      #teams:hover:after{background-color: #262626;
+
+      }
+      #copilot{
+      
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+    #copilot:hover{
+      color: black;
+      font-weight: bold;
+    }
+    #copilot::after{
+      content: "";
+      background-color:transparent;
+      display: block;
+      width: 60px;
+      height: 4px;
+      transition:ease 2s;
+    }
+    #copilot:hover:after{background-color: #262626;
+
+    }
+    #windows{
+      
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+    #windows:hover{
+      color: black;
+      font-weight: bold;
+    }
+    #windows::after{
+      content: "";
+      background-color:transparent;
+      display: block;
+      width: 70px;
+      height: 4px;
+      transition:ease 2s;
+    }
+    #windows:hover:after{background-color: #262626;
+
+    }
+    #xbox{
+      
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+    #xbox:hover{
+      color: black;
+      font-weight: bold;
+    }
+    #xbox::after{
+      content: "";
+      background-color:transparent;
+      display: block;
+      width: 40px;
+      height: 4px;
+      transition:ease 2s;
+    }
+    #xbox:hover:after{background-color: #262626;
+
+    }
+    #support{
+      
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+    #support:hover{
+      color: black;
+      font-weight: bold;
+    }
+    #support::after{
+      content: "";
+      background-color:transparent;
+      display: block;
+      width: 65px;
+      height: 4px;
+      transition:ease 2s;
+    }
+    #support:hover:after{background-color: #262626;
+
+    }
+    #surface{
+      
+      font-family: sans-serif;
+      font-size: 16px;
+    }
+    #surface:hover{
+      color: black;
+      font-weight: bold;
+    }
+    #surface::after{
+      content: "";
+      background-color:transparent;
+      display: block;
+      width: 60px;
+      height: 4px;
+      transition:ease 2s;
+    }
+    #surface:hover:after{background-color: #262626;
+
+    }
+    #user{
+        font-size: 50px;
+        position: absolute;
+        right: 40px;
+    }
+    #sign{
+        position: absolute;
+        font-size: 20px;
+        right: 100px;
+    }
+    #cart{
+        font-size: 20px;
+        position: absolute;
+        right: 225px;
+    }
+    #cart::after{
+      content: "";
+      background-color:transparent;
+      display: block;
+      width:35px;
+      height: 4px;
+      transition:ease 2s;
+    }
+    #cart:hover:after{background-color: #262626;
+
+    }
+
+    #cart1{
+        font-size: 35px;
+        position: absolute;
+        right: 190px;
+    }
+    #search1{
+        font-size: 25px;
+        position: absolute;
+        right: 300px;
+        padding-top: 0px;
+        transform: rotate(85deg);
+    }
+    #search{
+        position: absolute;
+        right: 320px;
+        font-size: 20px;
+    /* }
+    #all:hover{
+      color: black;
+      */
+    }
+    #search::after{
+      content: "";
+      background-color:transparent;
+      display: block;
+      width: 50px;
+      height: 4px;
+      transition:ease 2s;
+    }
+    #search:hover:after{background-color:  #262626;
+
+    }
+    #arrow{
+        font-size: 25px;
+        position: absolute;
+        right: 430px;
+        padding-top: 5px;
+    }
+    #all{
+        font-size: 18px;
+        font-family: sans-serif;
+        position: absolute;
+        right: 450px;
+        /* position: relative; */
+    }
+    
+    #all:hover{
+      color: black;
+     
+    }
+    #all::after{
+      content: "";
+      background-color:transparent;
+      display: block;
+      width: 100px;
+      height: 4px;
+      transition:ease 2s;
+    }
+    #all:hover:after{background-color:  #262626;
+
+    }
+    #table{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    top: 40px;
+    left: -810px;
+    width: 1400px;
+    padding: 10px 35px;
+   
+    height: 550px;
+    padding-top: -100px;
+    z-index: 100;
+    font-family: sans-serif;
+    font-size: 18px;
+    
+    }
+    #all:hover #table{
+        display: block;
+        
+    }
+  
+    /* #divmain1>img{
+     width: 2200px;
+     height: 500px;
+    } */
+    .td{
+      color: red;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+    .td::after{
+      content: "";
+      background-color:transparent;
+      display: block;
+      width: 100%;
+      height: 3px;
+      transition: ease 2s;
+    }
+    .td:hover::after{
+     background-color: black;
+    }
+    #divmain1{
+      width: 98%;
+      height: 500px;
+      background-image: url(anotherbackground.png);
+      /* background-color: aqua; */
+      box-sizing: border-box;
+      padding: 25px;
+      margin:0px auto;
+      position: relative;
+      z-index: -1;
+    }
+    #divmain1> h1{
+      position: absolute;
+      left:810px ;
+    }
+    #divmain1> p{
+      position: absolute;
+      left: 600px;
+      top: 60px;
+      font-size: 25px;
+      font-family: sans-serif;
+
+    }
+    #divmain1>button{
+      width: 150px;
+      height: 40px;
+      background-color: rgb(129, 129, 221);
+      color: whitesmoke;
+      font-size: 20px;
+      border-color: red;
+      border-radius: 15px;
+      position: absolute;
+      left: 830px;
+      top: 100px;
+      
+    }
+    #left{
+      font-size: 60px;
+      width: 60px;
+      height: 60px;
+      background-color: whitesmoke;
+      border-style: dotted;
+      text-align: center;
+      border-radius: 50%;
+      /* padding-top: 5px; */
+      position: absolute;
+      left: 830px;
+      bottom: -65px;
+      
+    }
+    #right{
+      font-size: 60px;
+      width: 60px;
+      height: 60px;
+      background-color: whitesmoke;
+      border-style: dotted;
+      text-align: center;
+      border-radius: 50%;
+      left: 980px;
+      position: absolute;
+       bottom: -63px;
+    }
+    #empty{
+      font-size: 33px;
+      position: absolute;
+      left: 940px;
+      bottom: -60px;
+    }
+    #filled{
+      font-size: 35px;
+      color: black;
+      position: absolute;
+      left:900px;
+      bottom: -60px;
+    }
+    #divmain2{
+      width: 100%;
+      height: 130px;
+      background-color: white;
+      box-sizing: border-box;
+      margin: 70px auto;
+      position: relative;
+      padding: 20px;
+    }
+    #img1{
+      position: absolute;
+      left: 550px;
+      top: 35px;
+    }
+    #head{
+      position: absolute;
+      color: black;
+      left: 500px;
+      top: 90px;
+      font-style: italic;
+      text-decoration: underline;
+      color: blue;
+    }
+    #img2{
+      position: absolute;
+      left: 950px;
+      top: 35px;
+     
+    }
+    #head1{
+      position: absolute;
+      color: black;
+      left: 900px;
+      top: 90px;
+      font-style: italic;
+      text-decoration: underline;
+      color: blue;
+    }
+    #img3{
+      position: absolute;
+      left: 1350px;
+      top: 35px;
+    }
+    #head2{
+      position: absolute;
+      color: black;
+      left: 1370px;
+      top: 90px;
+      font-style: italic;
+      text-decoration: underline;
+      color: blue;
+    }
+    #divmain3{
+      box-sizing: border-box;
+      width: 100%;
+      background-color: white;
+      margin: 5px auto;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    #div3sub1{
+      width: 24%;
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px auto;
+      box-shadow: 3px 15px 22px;
+      border: 3px solid blue;
+    }
+    #image{
+      width: 100%;
+      margin-left: 0px;
+      height: 300px;
+      
+    }
+    #div3sub1>h1{
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    }
+    #div3sub1>p{
+      font-size: 24px;
+      padding: 10px;
+    }
+    #div3sub1>button{
+      width: 150px;
+      height: 40px;
+      margin: 15px;
+      font-size: 20px;
+      background-color: rgb(116, 116, 214);
+      color: whitesmoke;
+      margin-left: 130px;
+      border-radius: 15px;
+      border-color: red;
+    }
+    #div3sub2{
+      width: 24%;
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px auto;
+      box-shadow: 3px 15px 22px;
+      border: 3px solid blue;
+    }
+    #image1{
+      width: 100%;
+      margin-left: 0px;
+      height: 300px;
+      
+    }
+    #div3sub2>h1{
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    }
+    #div3sub2>p{
+      font-size: 24px;
+      padding: 10px;
+    }
+    #div3sub2>button{
+      width: 150px;
+      height: 40px;
+      margin: 15px;
+      font-size: 20px;
+      background-color: rgb(116, 116, 214);
+      color: whitesmoke;
+      margin-left: 130px;
+      border-radius: 15px;
+      border-color: red;
+      margin-top: 35px;
+    }
+    #div3sub3{
+      width: 24%;
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px auto;
+      box-shadow: 3px 15px 22px;
+      border: 3px solid blue;
+    }
+    #image2{
+      width: 100%;
+      margin-left: 0px;
+      height: 300px;
+      
+    }
+    #div3sub3>h1{
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    }
+    #div3sub3>p{
+      font-size: 24px;
+      padding: 10px;
+    }
+    #div3sub3>button{
+      width: 200px;
+      height: 40px;
+      margin: 15px;
+      font-size: 20px;
+      background-color: rgb(116, 116, 214);
+      color: whitesmoke;
+      margin-left: 130px;
+      border-radius: 15px;
+      border-color: red;
+      margin-top: 80px;
+    }
+    #div3sub4{
+      width: 24%;
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px auto;
+      position: relative;
+      box-shadow: 3px 15px 22px;
+      border: 3px solid blue;
+    }
+    #image3{
+      width: 100%;
+      margin-left: 0px;
+      height: 300px;
+      
+    }
+    #div3sub4>h1{
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    }
+    #div3sub4>p{
+      font-size: 24px;
+      padding: 10px;
+      margin-top: -20px;
+    }
+    #div3sub4>button{
+      width: 150px;
+      height: 40px;
+      margin: 15px;
+      font-size: 20px;
+      background-color: rgb(116, 116, 214);
+      color: whitesmoke;
+      margin-left: 130px;
+      border-radius: 15px;
+      border-color: red;
+      margin-top: -20px;
+    }
+    #div3sub4>h3{
+      /* background-color: rgb(102, 102, 246); */
+      color: rgb(116, 116, 214);
+      width: 200px;
+      height: 30px;
+      font-size: 23px;
+      margin-left: 20px;
+      padding-bottom: 15px;
+      text-decoration: underline;
+    }
+    #div3sub4>span{
+      font-size: 40px;
+      position: absolute;
+      left: 215px;
+      bottom: -10px;
+      color: blue;
+    }
+    #divmain4{
+      width: 100%;
+      background-color: #fff;
+      height: 500px;
+      box-sizing: border-box;
+      margin: 15px auto;
+      padding: 10px;
+      position: relative;
+    }
+    #divmain4>h1{
+    /* font-size: ; */
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    position: absolute;
+    bottom: 300px;
+    left: 90px;
+    }
+    #divmain4>p{
+      font-size:21px;
+      font-family: sans-serif;
+      font-style: normal;
+      position: absolute;
+      left: 50px;
+      bottom: 260px;
+    }
+    #divmain4>button{
+      width: 230px;
+      height: 50px;
+      /* font: 400; */
+      font-size: 22px;
+      background-color: rgb(116, 116, 214); 
+      color: whitesmoke;
+      font-family: sans-serif;
+      position: absolute;
+      bottom: 190px;
+      left: 100px;
+      border: 3px solid red;
+      border-radius: 15px;
+    }
+    #divmain4>img{
+      position: absolute;
+      right: 300px;
+      
+      width: 32%;
+      height: 100%;
+       
+    }
+    #divmain5{
+      width: 100%;
+      background-color:white;
+      box-sizing: border-box;
+      margin: 5px auto;
+      padding: 10px;
+    }
+    #divmain5>h1{
+      margin: 5px;
+      padding: auto;
+      font-family: sans-serif;
+      font-style: italic;
+      margin-left: 20px;
+    }
+
+    #divmain51{
+     display: flex; 
+     justify-content: space-evenly;
+     margin-top: 15px;
+    }
+    #div5sub1{
+      width: 24%;
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px auto;
+      position: relative;
+      box-shadow: 3px 15px 22px;
+      border: 3px solid blue;
+    }
+    #div5sub1>img{
+      width: 100%;
+      margin-left: 0px;
+      height: 300px;
+      
+    }
+    #div5sub1>h3{
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: italic;
+    }
+    #div5sub1>p{
+      font-size: 24px;
+      padding: 20px;
+      margin-top: -20px;
+    }
+    #div5sub1>button{
+      width: 200px;
+      height: 40px;
+      margin: 15px;
+      font-size: 22px;
+      background-color: rgb(116, 116, 214);
+      color: whitesmoke;
+      margin-left: 130px;
+      border-radius: 15px;
+      border-color: red;
+      margin-top: 20px;
+    }
+    #div5sub2{
+      width: 24%;
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px auto;
+      position: relative;
+      box-shadow: 3px 15px 22px;
+      border: 3px solid blue;
+    }
+    #div5sub2>img{
+      width: 100%;
+      margin-left: 0px;
+      height: 300px;
+      
+    }
+    #div5sub2>h3{
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: italic;
+    }
+    #div5sub2>p{
+      font-size: 24px;
+      padding: 20px;
+      margin-top: -20px;
+    }
+    #div5sub2>button{
+      width: 200px;
+      height: 40px;
+      margin: 15px;
+      font-size: 22px;
+      background-color: rgb(116, 116, 214);
+      color: whitesmoke;
+      margin-left: 130px;
+      border-radius: 15px;
+      border-color: red;
+      margin-top: 20px;
+    }
+    #div5sub3{
+      width: 24%;
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px auto;
+      position: relative;
+      box-shadow: 3px 15px 22px;
+      border: 3px solid blue;
+    }
+    #div5sub3>img{
+      width: 100%;
+      margin-left: 0px;
+      height: 300px;
+      
+    }
+    #div5sub3>h3{
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: italic;
+    }
+    #div5sub3>p{
+      font-size: 24px;
+      padding: 20px;
+      margin-top: -20px;
+    }
+    #div5sub3>button{
+      width: 200px;
+      height: 40px;
+      margin: 15px;
+      font-size: 22px;
+      background-color: rgb(116, 116, 214);
+      color: whitesmoke;
+      margin-left: 130px;
+      border-radius: 15px;
+      border-color: red;
+      margin-top: 20px;
+    }
+    #div5sub4{
+      width: 24%;
+      background-color: white;
+      box-sizing: border-box;
+      padding: 10px auto;
+      position: relative;
+      box-shadow: 3px 15px 22px;
+      border: 3px solid blue;
+    }
+    #div5sub4>img{
+      width: 100%;
+      margin-left: 0px;
+      height: 300px;
+      
+    }
+    #div5sub4>h3{
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: italic;
+    }
+    #div5sub4>p{
+      font-size: 24px;
+      padding: 20px;
+      margin-top: -20px;
+    }
+    #div5sub4>button{
+      width: 230px;
+      height: 40px;
+      margin: 15px;
+      font-size: 22px;
+      background-color: rgb(116, 116, 214);
+      color: whitesmoke;
+      margin-left: 130px;
+      border-radius: 15px;
+      border-color: red;
+      margin-top: 20px;
+    }
+    #table1{
+      width: 100%;
+      margin: 25px auto;
+      padding: 20px;
+      height: 500px;
+      font-size: 18px;
+      box-sizing: border-box;
+      background-color: gainsboro;
+      font-family: sans-serif;
+      position: relative;
+    }
+    .th{
+      color: red;
+      font-weight: bold;
+    }
+    /* #button{
+      width: 200px;
+      height: 45px;
+      font-size: 25px;
+      font-family: sans-serif;
+      color:whitesmoke;
+      padding-left: 0px;
+      position: absolute;
+      z-index: 999;
+      right: 0px;
+     bottom: -1650px;
+     background-color:magenta;
+     border-radius: 20px;
+     
+    } */
+    #combineddiv{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #divmain6{
+      width: 20%;
+      background-color:white;
+      height: 60px;
+      margin: 70px 40px;
+      padding: 15px;
+      box-sizing: border-box;
+      display: flex;
+      
+      align-items: center;
+    }
+    #divmain6>p{
+      font-size: 23px;
+      font-family: sans-serif;
+      font-style: normal;
+    } 
+    #divspan{
+      margin-left: 30px;
+      font-size: 45px;
+      color:rgb(116, 116, 214); 
+    }
+   
+    #divspan1{
+      margin-left: 10px;
+      font-size: 45px;
+      color: deepskyblue; 
+    }
+  
+    #divspan2{
+      margin-left: 10px;
+      font-size: 55px;
+      color:red; 
+    }
+    #divmain7{
+      box-sizing: border-box;
+      position: sticky;
+      
+    }
+    #divmain7>button{
+    width: 200px;
+    height: 40px;
+    
+    font-size: 27px;
+    bottom: 300px;
+    }
+    #divmain7>button:hover{
+      font-weight: bold;
+      background-color:white ;
+    }
+
+
+
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+   <header>
+    <div id="divmain">
+     <img src="microsoft1.png" alt="">
+     <h2>MICROSOFT</h2>
+     <nav>
+        <span id="microsoft">Microsot 365</span>    
+     <span id="teams">Teams</span>    
+     <span id="copilot">Copilot</span>    
+     <span id="windows">Windows</span>    
+     <span id="surface">Surface</span>    
+     <span id="xbox">Xbox</span>    
+     <span id="support">Support</span>
+     </nav>    
+     <span id="all">All Microsoft 
+        <table id="table" border="0px" cellspacing="0px">
+            <th >
+                <tr >
+                    <td class="td" >Software</td>
+                    <td class="td" >PC & Devices</td>
+                    <td class="td" >Entertainment</td>
+                    <td class="td" >Business</td>
+                    <td class="td" >Developer and IT</td>
+                    <td class="td" >other</td>
+                </tr>
+            </th>
+            <tbody>
+                <tr>
+                    <td>Windows Apps</td>
+                    <td >Shop Xbox</td>
+                    <td>Xbox Game pass ultimate</td>
+                    <td>Microsoft Cloud</td>
+                    <td>Developer center</td>
+                    <td>Free downloads & security</td>
+                </tr>
+                <tr >
+                    <td >Al</td>
+                    <td>Accessories</td>
+                    <td>Xbox Game Pass ultimate</td>
+                    <td>Microsoft security</td>
+                    <td>Documentation</td>
+                    <td>Education</td>
+                </tr>
+                <tr>
+                    <td>One drive</td>
+                    <td></td>
+                    <td>Xbox games</td>
+                    <td> Azure</td>
+                    <td>Microsoft learn</td>
+                    <td>Gift cards</td>
+                </tr>
+                <tr>
+                    <td>Outlook</td>
+                    <td></td>
+                    <td>PC Games</td>
+                    <td>Dynamics</td>
+                    <td>Microsoft Tech Community</td>
+                    <td>Licensing</td>
+                   
+                </tr>
+                <tr>
+                    <td>Skype</td>
+                    <td></td>
+                    <td>Windows digital games</td>
+                    <td>Microsoft 365 for Business</td>
+                    <td>Azure marketplace</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Onenote</td>
+                    <td></td>
+                    <td></td>
+                    <td>Microsoft Industry</td>
+                    <td>App source</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Microsoft Teams</td>
+                    <td></td>
+                    <td></td>
+                    <td>Microsoft Power Platform</td>
+                    <td>Visual Code</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+     </span>
+     <span id="arrow"><i class='bx bx-chevron-down'></i></span>
+     <span id="search">Search </span>
+     <span id="search1"><i class='bx bx-search'></i></span>
+     <span id="cart">Cart</span>
+     <span id="cart1"> <i class='bx bx-cart-add' ></i></span>
+     <span id="sign">Sign in</span>
+     <span id="user"><i class='bx bx-user-circle'></i></span>
+    </div>
+   </header> 
+   <div id="divmain1">
+    <h1>Surface Pro 9</h1>
+    <p>Tablet versality and laptop power - all in one ultra portable device</p>
+    <button>
+      Learn more 
+    </button>
+    <!-- <img src="image.jpeg" alt=""> -->
+  <span id="left"><i class='bx bx-chevron-left'></i></span> 
+  <span id="filled"><i class='bx bx-radio-circle-marked'></i></span> 
+  <span id="empty"><i class='bx bx-radio-circle'></i></span> 
+  <span id="right"><i class='bx bx-chevron-right'></i></span> 
+  </div>
+  <div id="divmain2">
+    <img id="img1" src="windows black.png" alt="">
+    <h2 id="head">Choose your Microsoft 365</h2>
+    <img id="img2" src="xbox.png" alt="">
+   <h2 id="head1"> Shop Xbox games and conosles</h2>
+   <img id="img3" src="windows black.png" alt="">
+   <h2 id="head2">Get windows 11</h2>
+  </div>
+  <div id="divmain3">
+    <div id="div3sub1">
+     <img id="image" src="div3sub1.png" alt="">
+     <h1 >Surface Laptop 5</h1>
+     <p>Sophisitcated style and multitasking speed powered by 12th Gen Intel core , with Windows 11 </p>
+     <button>Learn more</button>
+    </div>
+    <div id="div3sub2">
+      <img id="image1" src="div3sub2.png" alt="">
+     <h1>Surface Laptop Studio</h1>
+     <p>Flex your creative muscle in the most powerful surface laptop.Now available with windows 11 </p>
+     <button>Learn more</button>
+    </div>
+    <div id="div3sub3">
+      <img  id="image2" src="div3sub3.png" alt="">
+      <h1>Xbox Series X</h1>
+      <P>The fastest , most powerful Xbox ever</P>
+      <button>Shop Xbox series X</button>
+    </div>
+    <div  id="div3sub4">
+       <img id="image3" src="div3sub4.png" alt="">
+       <h1>Mximise the everyday with Microsoft 365</h1>
+       <p>Get online protection,secure cloud storage and innovation apps designed to fit your needs - all in one plan.</p>
+       <button>For one person</button>
+       <h3>For up to six people</h3>
+       <span><i class='bx bx-chevron-right'></i></span>
+    </div>
+   
+  </div>
+  <div id="divmain4">
+    <img src="xbox1.jpg" alt="">
+    <h1>Xbox Series S</h1>
+    <p>Next-gen performance in the smallest Xbox ever</p>
+    <button>Shop Xbox series S</button>
+  </div>
+  <div id="divmain5">
+    <h1>For Business</h1>
+   <div id="divmain51">
+    <div id="div5sub1">
+      <img src="div5.1.png" alt="">
+     <h3>Surface for business</h3>
+     <p>No matter what you do,there's a surface to help you do it</p>
+     <button>Shop now</button>
+    </div>
+    <div id="div5sub2">
+      <img src="div5.2.png" alt="">
+      <h3>Get Microsot Teams for free</h3>
+      <p>Online meetings,chat and shared cloud storage - all in one place</p>
+      <button>Signup for free</button>
+    </div>
+    <div id="div5sub3">
+      <img src="div5.3.png" alt="">
+      <h3>Windows 11 for business</h3>
+      <p>Designed for hybrid work.Powerful for employees </p>
+      <button>Learn more</button>
+    </div>
+    <div id="div5sub4">
+      <img src="div5.4.png" alt="">
+      <h3>Join the era of AI</h3>
+      <P>Create ,communicate,and code with the latest Microsoft AI solutions</P>
+      <button>Explore AI solutions</button>
+    </div>
+   </div>
+  </div>
+ <div id="combineddiv">
+  <div id="divmain6">
+    <p>Follow request</p>
+    <span id="divspan"><i class='bx bxl-facebook'></i></span>
+    <span id="divspan1"><i class='bx bxl-twitter'></i></span>
+    <span id="divspan2"><i class='bx bxl-youtube' ></i></span>
+   </div>
+   <div id="divmain7">
+     <button> <i class='bx bx-up-arrow-alt'></i>Back to top</button>
+   </div>
+ </div>
+  <footer>
+    <table id="table1" border="0px" cellspacing="2px">
+      <th >
+        <tr>
+          <td class="th">What's new</td>
+          <td class="th">Microsoft store</td>
+          <td class="th">Education</td>
+          <td class="th">Business</td>
+          <td class="th">Developer & IT</td>
+          <td class="th">Company</td>
+        </tr>
+      </th>
+      <tbody>
+        <tr>
+          <td class="data">Microsft 365</td>
+          <td class="data">Acoount profile</td>
+          <td class="data">Microsoft in Education</td>
+          <td class="data">Microsoft Cloud</td>
+          <td class="data">Developer center</td>
+          <td class="data">Careers</td>
+        </tr>
+        <tr>
+          <td class="data">Games</td>
+          <td class="data">Dwnload center</td>
+          <td class="data">Devices for education</td>
+          <td class="data">Microsft security</td>
+          <td class="data">Documentation</td>
+          <td class="data">About Microsoft</td>
+        </tr>
+        <tr>
+          <td class="data"> Surface Pro 9</td>
+          <td class="data">Microsoft store support</td>
+          <td class="data">Microsoft teams and education</td>
+          <td class="data">Azure</td>
+          <td class="data">Microsoft learn</td>
+          <td class="data">Company news</td>
+        </tr>
+        <tr>
+          <td class="data">Surface Laptop 5</td>
+          <td class="data">Returns</td>
+          <td class="data">Microsoft 365 Education</td>
+          <td class="data">Dynamics 365</td>
+          <td class="data">Microsoft Tech Community</td>
+          <td class="data">Privacy at microsoft</td>
+        </tr>
+        <tr>
+          <td class="data">Surface Laptop Go 2</td>
+          <td class="data">Order tracking</td>
+          <td class="data">Office education</td>
+          <td class="data">Microsoft 365</td>
+          <td class="data">Azure Marketplace</td>
+          <td class="data">Investors</td>
+        </tr>
+        <tr>
+          <td class="data">Windows 11 apps</td>
+          <td></td>
+          <td class="data">Educator trainning and development</td>
+          <td class="data">Microsoft advertising</td>
+          <td class="data">App source</td>
+          <td class="data">security</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Deals for students and parents</td>
+          <td class="data">Microsoft Industry</td>
+          <td class="data">Microsoft power platform</td>
+          <td class="data">Sustainibility</td>
+        </tr>
+        <tr>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data">Azure for students</td>
+          <td class="data">Microsoft Teams</td>
+          <td class="data">Visual Studio</td>
+          <td></td>
+        </tr>
+      </tbody>
+     
+    </table>
+  </footer>
+   
+</body>
+</html>
