@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #maindiv{
+            width: 100%;
+            height:6.5rem ;
+            background-color:#131921;
+            margin: 0rem auto;
+            padding: 1.5rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: whitesmoke;
+            /* position: fixed;
+            z-index: 1000000;
+            top: 0rem; */
+        }
+        #maindiv>#img1{
+            height:5rem;
+            position: absolute;
+            left: 0.7em;
+            width: 11rem;
+            padding: 0.5em;
+         }
+         #img1:hover{
+          border: 0.2em solid;
+         }
+         /* #img1:hover{
+            color: red;
+            border: .1rem solid white;
+         } */
+         #para1{
+            position: absolute;
+            left: 16rem;
+            top: 1rem;
+            font-size: 20px;
+            font-family: sans-serif;
+            
+         }
+         #para1:hover{
+            color: red;
+            border: .2rem solid white;
+         }
+         #span1{
+            position: absolute;
+            left: 13.4rem;
+            top: 2.2rem;
+            font-size: 37px;
+         }
+         #h31{
+            position: absolute;
+            left: 16rem;
+            top: 2.8rem; 
+            font-size: 22px;
+            font-family: sans-serif;
+         }
+         #h31:hover{
+            color: red;
+            border: .2rem solid white;
+         }
+         #button1{
+         height: 3.16rem;
+         width:4rem;
+         font-size: 20px;
+         font-family: sans-serif;
+         color: black;
+         background-color: rgb(200, 194, 194);
+          /* margin-left: -17rem; */
+          border-radius: 15px 0px 0px 15px;
+          border-right: 2px solid  rgb(200, 194, 194);
+          position: relative;
+         }
+         #button1:hover{
+            background-color: black;
+            border: .2rem solid red;
+            color: whitesmoke;
+         }
+         #span2{
+            font-size: 23px;
+         }
+         #span1:hover{
+            color: deepskyblue;
+            /* border: .2rem solid white; */
+         }
+     
+         #ul{
+            list-style-type: none;
+            display: none;
+            width: 19rem;
+            background-color: aqua;
+            height: 40rem;
+            position: absolute;
+            bottom: -40.0rem;
+            left: -5rem;
+            /* display: flex; */
+            /* flex-direction: column; */
+            gap: 0.9rem;
+            overflow: scroll;
+            background-color: rgb(200, 194, 194);
+            z-index: 1000000000000;
+         }
+         li{
+            margin: 6px;
+            color: black;
+         }
+         li::first-letter{
+            color: red;
+         }
+         #button1:hover #ul {
+          display: block;
+         }
+
+         input{
+            height: 3rem;
+         width:47rem;
+         font-size: 20px;
+         font-family: sans-serif;
+         color: black;
+          padding-left: 1rem;
+          color: grey;
+          border: transparent;
+         }
+         /* #input:active{
+            color: red;
+            border: .2rem solid white;
+         } */
+         #cart{
+            position: absolute;
+            right: 1rem;
+            font-size: 23px;
+            font-family: sans-serif;
+         }
+         #cart:hover{
+            color: red;
+            border: .2rem solid white;
+         }
+         #carticon{
+            position: absolute;
+            right: 4.0rem;
+            font-size: 60px;
+            font-family: sans-serif;
+         }
+         #orders{
+            position: absolute;
+            right: 8rem;
+            bottom: 2rem;
+            font-family: sans-serif;
+            font-size: 20px;
+         }
+         #orders:hover{
+            color: red;
+            border: .2rem solid white;
+         }
+         #returns{
+            position: absolute;
+            right: 8.8rem;
+            bottom: 3.7rem;
+            font-size: 20px;
+         }
+         #returns:hover{
+            color: red;
+            border: .2rem solid white;
+         }
+         #al{
+            position: absolute;
+            right: 16rem;
+            bottom: 2rem;
+            font-family: sans-serif;
+            font-size: 20px;
+            /* position: relative; */
+            
+         }
+   
+         
+         #al:hover{
+            color: red;
+            border: .2rem solid white;
+         }
+         #dival{
+         background-color: whitesmoke;
+         box-sizing: border-box;
+         position: absolute;
+         width: 40rem;
+         /* height: 40rem; */
+         padding: 1rem auto;
+         position: absolute;
+         top: 4em;
+         /* right: 200rem; */
+         top: 1.5em;
+         right: -12.5em;
+         display: none;
+         z-index: 1000000000;
+         }
+         #al:hover #dival{
+            display: block;
+         }
+         #dival>button{
+            width: 40%;
+            height: 1.8em;
+            font-size: 23px;
+            margin: .8em;
+            /* padding: .3em .2em; */
+           margin-left: 7.5em;
+            right: 10.3em;
+            top: -0.39em;
+            font-family: sans-serif;
+         background-color: deepskyblue;
+         border-radius: 15px;
+         }
+         #dival>button:hover{
+            border: 0.2em solid white;
+            background-color: black;
+            color: whitesmoke;
+         }
+         #dival>p{
+            font-family: sans-serif;
+            font-size: 22px;
+            color:black;
+            margin-left:7.3em ;
+            margin-top: -0.8em;
+         }
+         hr{
+            margin-top: 0.3rem;
+            color: rgb(200, 194, 194);
+            height: 0.2em;
+         }
+     
+         #spandival{
+            color: blue;
+            font-family: sans-serif;
+            text-decoration: underline;
+         }
+
+
+         #divalmain{
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin: 2rem .3rem;
+            padding: .3rem ;
+            font-family: sans-serif;
+            font-size: 20px;
+            color: black;
+            font-weight: none ;
+         }
+         #divalsub1{
+            border-right: 0.2em solid  rgb(200, 194, 194);
+            padding-right: 2rem;
+            padding-left: 0.5rem;
+         }
+         #divalsub1::first-line{
+            color: red;
+         }
+         #divalsub2::first-line{
+            color: red;
+         }
+         #hello{
+            position: absolute;
+            right: 17rem;
+            bottom: 3.7rem;
+            font-family: sans-serif;
+            font-size: 20px;
+         }
+         #hello:hover{
+            color: red;
+            border: .2rem solid white;
+         }
+         #down1{
+            position: absolute;
+            right: 14.6rem;
+            bottom: 1.6rem;
+            font-family: sans-serif;
+            font-size: 26px;  
+
+         }
+         #en{
+            position: absolute;
+            right: 30rem; 
+            font-family: sans-serif;
+           
+         }
+         #en:hover{
+            color:red;
+            border: .2rem solid white;
+         }
+         #divenmain{
+            background-color:whitesmoke;
+            width: 14em;
+            box-sizing: border-box;
+            margin: 0em ;
+            padding: 0.8em 0.7em;
+            position: absolute;
+            right:-10em;
+            top: 1em;
+            display: none;
+            z-index: 999;
+         }
+         #en:hover #divenmain{
+            display: block;
+         }
+         #divensub1{
+         background-color: whitesmoke;
+         box-sizing: border-box;
+         margin:  auto;
+         padding:  auto;
+         font-family: sans-serif;
+         font-size: 18px;
+         padding-bottom: 1.5em;
+         border-bottom: 0.2em solid  rgb(200, 194, 194); ;
+         display: flex;
+         }
+         .divenspan1{
+            font-size: 30px;
+            color: red;
+         }
+         #divensub2{
+         background-color: whitesmoke;
+         box-sizing: border-box;
+         margin:  auto;
+         padding:  auto;
+         font-family: sans-serif;
+         font-size: 18px;
+         padding-bottom: 1.5em;
+         border-bottom: 0.2em solid  rgb(200, 194, 194); ;
+         
+         }
+         .divenspan2{
+            font-size: 22px;
+            color:black;
+         }
+         #divensub1>p{
+          padding-top: 0.25em;
+         }
+         #divenp8{
+            color: blue;
+            text-align: center;
+            padding-top: 0.7em; 
+            text-decoration: underline;
+         }
+         #divensub3{
+         background-color: whitesmoke;
+         box-sizing: border-box;
+         margin:  auto;
+         padding:  0.5em 0em;
+         font-family: sans-serif;
+         font-size: 18px;
+         padding-bottom: 1.5em;
+         border-bottom: 0.2em solid  rgb(200, 194, 194); ;
+        position: relative;
+         }
+         #divensub3>img{
+            width: 1.9rem;
+            
+         }
+         #divenp9{
+            position: absolute;
+            right: 0em;
+            top: 0.6em;
+         }
+         #divenp10{
+            text-align: center;
+            text-decoration: underline;
+            color: blue;
+         }
+       
+         #down{
+            position: absolute;
+            right: 28.5rem; 
+            font-family: sans-serif;
+            bottom: 2.1rem;
+            font-size: 25px;
+         }
+         #img2{
+            width: 2rem;
+            position: absolute;
+            right: 32.5rem; 
+         }
+         #button2{
+         height: 3.16rem;
+         width:4rem;
+         font-size: 40px;
+         font-family: sans-serif;
+         color: black;
+         background-color: rgb(200, 194, 194);
+          /* margin-left: -17rem; */
+          border-radius: 0px 15px 15px 0px;
+          border-left: 2px solid  rgb(200, 194, 194);
+          padding-top: .2rem;
+          background-color: goldenrod;
+         color: white;
+         margin-left: -0.1rem;
+         }
+         #button2:hover{
+            color:black;
+            border: .2rem solid blue;
+            background-color: deepskyblue;
+         }
+         #divmain1>img{
+            width: 100%;
+            height: 45rem;
+            z-index: -10;
+         }
+         #header{
+            width: 100%;
+            height: 2.7em;
+            background-color: yellow;
+            box-sizing: border-box;
+            display: flex;
+            gap: 2rem;
+            margin: 0rem 0rem;
+            padding:0rem 1rem;
+            /* padding-top: 1rem; */
+            font-size: 19px;
+            align-items: center;
+            position: relative;
+            z-index: 100;
+            background-color: rgb(123, 123, 236);
+            color:black;
+         }
+         #headspan2{
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-left: -0.2em;
+            position: absolute;
+            left: 3em;
+            top: 0.7em;
+         }
+         #headspan1{
+            font-size:33px;
+            position: absolute;
+            top: 0.2em;
+         }
+         #head:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         #headermenu{
+            width: 30rem;
+            background-color:whitesmoke;
+            font-family: sans-serif;
+            font-size: 23px;
+            height: 51.6rem;
+            overflow: scroll;
+            box-sizing: border-box;
+            margin: 0.4rem 0rem;
+            padding: 0.5rem 1rem;
+            position: relative;
+            position: absolute;
+            top: 1.5rem;
+            left: -1.3rem;
+            z-index: 1000;
+            display: none;
+         }
+         #headspan1:hover #headermenu{
+         display:block;
+         }
+        
+         #headersub1{
+            background-color: whitesmoke;
+           border-bottom: 0.23rem solid;
+         
+         }
+         #headersub2{
+            background-color:whitesmoke;
+           border-bottom: 0.23rem solid;
+         }
+         #headersub3{
+            background-color:whitesmoke;
+           border-bottom: 0.23rem solid;
+         }
+         #headersub4{
+            background-color:whitesmoke;
+           border-bottom: 0.23rem solid;
+         }
+         #headersub5{
+            background-color:whitesmoke;
+           border-bottom: 0.23rem solid;
+         }
+
+         #headersub1>p{
+            margin:1.2rem 0rem;
+         }
+         #headersub1>p:hover{
+            font-weight: bold;
+            color: red;
+         }
+         #headersub2>p{
+            margin:1.2rem 0rem;
+         }
+         #headersub2>p:hover{
+            font-weight: bold;
+            color: red;
+         }
+         #headersub3>p{
+            margin:1.2rem 0rem;
+         }
+         #headersub3>p:hover{
+            font-weight: bold;
+            color: red;
+         }
+         #headersub4>p{
+            margin:1.2rem 0rem;
+         }
+         #headersub4>p:hover{
+            font-weight: bold;
+            color: red;
+         }
+         #headersub5>p{
+            margin:1.2rem 0rem;
+         }
+         #headersub5>p:hover{
+            font-weight: none;
+            color: red;
+            cursor: pointer;
+         }
+        #headermenu> span{
+            color: red;
+            font-size: 35px;
+         }
+         #headermenu>span:hover{
+            font-weight: bold;
+            color: black;
+         }
+         #headersub1>h2{
+            margin: 0.7rem 0rem;
+         }
+         #headersub2>h2{
+            margin: 0.7rem 0rem;
+         }
+         #headersub3>h2{
+            margin: 0.7rem 0rem;
+         }
+         #headersub4>h2{
+            margin: 0.7rem 0rem;
+         }
+         #headersub5>h2{
+            margin: 0.7rem 0rem;
+         }
+         .hr1{
+           position: absolute;
+           top:23.4rem ;
+           right: 0rem;
+         }
+         .hr2{
+           position: absolute;
+           top:26.4rem ;
+           right: 0rem;
+         }
+         .hr3{
+           position: absolute;
+           top:29.4rem ;
+           right: 0rem;
+         }
+         .hr4{
+           position: absolute;
+           top:32.4rem ;
+           right: 0rem;
+         }
+         .hr5{
+           position: absolute;
+           top:35.1rem ;
+           right: 0rem;
+         }
+         .hr6{
+           position: absolute;
+           top:38.1rem ;
+           right: 0rem;
+         }
+         .hr7{
+           position: absolute;
+           top:45.4rem ;
+           right: 0rem;
+         }
+         .hr8{
+           position: absolute;
+           top:48.4rem ;
+           right: 0rem;
+         }
+         .hr9{
+           position: absolute;
+           top:51.4rem ;
+           right: 0rem;
+         }
+         .hr10{
+           position: absolute;
+           top:54.4rem ;
+           right: 0rem;
+         }
+         .hr11{
+           position: absolute;
+           top:67.9rem ;
+           right: 0rem;
+         }
+         #headsub1{
+            border: 0.2em solid transparent;
+            height: 2.3em;
+            width: 4em;
+            padding-left: 0.3em;
+            font-size: 20px;
+         }
+         #headsub1:hover{
+            border: 0.2em solid aliceblue;
+            color:black;
+         }
+        
+         .nav1{
+            text-decoration: none;
+           
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+            color: whitesmoke;
+         }
+         .nav1:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+        
+         .nav2{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav2:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         /* .nav2::after{
+            content: "";
+            display: block;
+           background-color:transparent;
+            width: 9rem;
+            height: 0.2rem;
+            transition: 1s;
+         }
+         .nav2:hover::after{
+          background-color: red;
+         } */
+         .nav3{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav3:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         .nav4{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav4:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         .nav5{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav5:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         .nav6{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav6:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         .nav7{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav7:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         .nav8{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav8:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         .nav9{
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav9:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         .nav10{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav10:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         .nav11{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav11:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         
+         .nav12{
+            text-decoration: none;
+            color:whitesmoke;
+            font-family: sans-serif;
+            font-weight: bold;
+            /* border: 0.2em solid ; */
+            padding: 0.4em;
+         }
+         .nav12:hover:hover{
+            border: 0.2em solid aliceblue;
+            color: #131921;
+         }
+         #divbackground{
+            width: 100%;
+            height: 35rem;
+            background-image:url(midbackground.jpg);
+           box-sizing: border-box;
+           margin: 0rem;
+           padding: 0.5rem;
+           position: relative;
+         }
+         #divbackground>img{
+            position: absolute;
+         right: 30em;
+         top: 5rem;
+         height: 21rem;
+          border: 0.4rem solid rgb(123, 123, 236);
+          box-shadow: 6px 15px 30px;
+         }
+        #divbackground>h2{
+         font-size: 45px;
+         position: absolute;
+         top: 2em;
+         left: 12.2em;
+         font-family: sans-serif;
+        }
+        #divbackground>p{
+         position: absolute;
+         font-size: 22px;
+         font-family: sans-serif;
+         top: 6.5em;
+         left: 26.2em;
+        }
+        #divright{
+         font-size: 105px;
+         position: absolute;
+         top: 6rem;
+         right: 0.3em;
+         background-color:transparent;
+         border: 0.3rem solid rgb(123, 123, 236);;
+         padding: 1em 0.1em ;
+        }
+        #divright:hover{
+         color: blue;
+         background-color:whitesmoke;
+        }
+        #divleft{
+         font-size: 105px;
+         position: absolute;
+         top: 6rem;
+         left: 0.3em;
+         background-color:transparent;
+         border: 0.3rem solid rgb(123, 123, 236);;
+         padding: 1em 0.1em ;
+        }
+        #divleft>:hover{
+         color: blue;
+      
+        }
+        #divmain2{
+         width: 35rem;
+         background-color:whitesmoke;
+         box-sizing: border-box;
+         margin: 0rem;
+         padding: 1rem 0.6rem;
+         position: absolute;
+         top: 37.5rem;
+         right: 1em;
+        }
+       
+        #divmain>h2{
+         font-family: sans-serif;
+         font-size:27px;
+         margin-left: 0.6rem;
+       }
+       #h2a{
+         width:24rem ;
+         padding-right: -0.8rem;
+          border-right: 0.3rem solid black;
+          /* background-color: yellow; */
+       }
+       #divmainsub{
+         display: flex;
+         flex-wrap: wrap;
+         gap: 2.3rem;
+         margin: 0.7rem; ;
+       }
+       #divsub1>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #divsub2>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #divsub3>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #divsub4>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #divmainsub>button{
+         width: 100%;
+         height: 1.9rem;
+         font-family: sans-serif;
+         font-size: 20px;
+         text-align: start;
+         color: blue;
+         border: 0;
+         text-decoration: underline;
+         background-color: whitesmoke;
+       }
+       #divmainsub>button:hover{
+         color: red;
+       }
+       #divmain3{
+         width: 35rem;
+         background-color:whitesmoke;
+         box-sizing: border-box;
+         margin: 0rem;
+         padding: 1rem 0.6rem;
+         position: absolute;
+         top: 37.5rem;
+         right: 38em;
+        }
+       #div3main1{
+         display: flex;
+       }
+        #div3main1>h2{
+         font-family: sans-serif;
+         font-size:27px;
+         margin-left: 0.6rem;
+       }
+       #sub1{
+         width:14rem ;
+         padding-right: -0.8rem;
+          border-right: 0.3rem solid black;
+          /* background-color: yellow; */
+       }
+       #div3main2{
+         display: flex;
+         flex-wrap: wrap;
+         gap: 2.3rem;
+         margin: 0.7rem; ;
+       }
+       #divmain2sub1>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #divmain2sub1>img{
+         width: 232px;
+         height: 162px;
+       }
+       #divmain2sub2>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #divmain2sub2>img{
+         width: 232px;
+         height: 162px;
+       }
+       #divmain2sub3>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #divmain2sub3>img{
+         width: 232px;
+         height: 162px;
+       }
+       #divmain2sub4>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #divmain2sub4>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div3main2>button{
+         width: 100%;
+         height: 1.9rem;
+         font-family: sans-serif;
+         font-size: 20px;
+         text-align: start;
+         color: blue;
+         border: 0;
+         text-decoration: underline;
+         background-color: whitesmoke;
+       }
+       #div3main2>button:hover{
+         color: red;
+       }
+       #divmain4{
+         width: 35rem;
+         background-color:whitesmoke;
+         box-sizing: border-box;
+         margin: 0rem;
+         padding: 1rem 0.6rem;
+         position: absolute;
+         top: 37.5rem;
+         right: 75em;
+        }
+       #div4main1{
+         display: flex;
+       }
+        #div4main1>h2{
+         font-family: sans-serif;
+         font-size:27px;
+         margin-left: 0.6rem;
+       }
+       #div4main1sub{
+         width:14rem ;
+         padding-right: -0.8rem;
+          border-right: 0.3rem solid black;
+          /* background-color: yellow; */
+       }
+       #div4main2{
+         display: flex;
+         flex-wrap: wrap;
+         gap: 2.3rem;
+         margin: 0.7rem; ;
+       }
+       #div4main2sub1>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div4main2sub1>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div4main2sub2>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div4main2sub2>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div4main2sub3>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div4main2sub3>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div4main2sub4>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div4main2sub4>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div4main2>button{
+         width: 100%;
+         height: 1.9rem;
+         font-family: sans-serif;
+         font-size: 20px;
+         text-align: start;
+         color: blue;
+         border: 0;
+         text-decoration: underline;
+         background-color: whitesmoke;
+       }
+       #div4main2>button:hover{
+         color: red;
+       }
+       #divmain5{
+         width:14.5rem ;
+         background-color: whitesmoke;
+         box-sizing: border-box;
+         height: 34.8rem;
+         position: absolute;
+         top: 37.5rem;
+         margin: 0rem 0.4rem;
+         padding: 0rem;
+       }
+       #divmain5>img{
+       width: 100%;
+       height:30rem ;
+       }
+       #divmain5>button{
+         margin-top: 1.5em;
+         width: 100%;
+         height: 1.9rem;
+         font-family: sans-serif;
+         font-size: 20px;
+         text-align: start;
+         color: blue;
+         border: 0;
+         text-decoration: underline;
+         background-color: whitesmoke;
+       }
+       #divmain5>button:hover{
+         color: red;
+       }
+       img,button,h2,h3,p,span,input,h1{
+         cursor: pointer;
+       }
+       #divmain6{
+         width: 35rem;
+         background-color:whitesmoke;
+         box-sizing: border-box;
+         margin: 0rem;
+         padding: 1rem 0.6rem;
+         position: absolute;
+         top: 76rem;
+        right: 1em;
+         /* margin-top: 65r em; */
+        }
+       /* #div4main1{
+         display: flex;
+       } */
+        #div6main1>h2{
+         font-family: sans-serif;
+         font-size:27px;
+         margin-left: 0.6rem;
+       }
+       #div6main1sub{
+         width:14rem ;
+         padding-right: -0.8rem;
+          border-right: 0.3rem solid black;
+          /* background-color: yellow; */
+       }
+       #div6main2{
+         display: flex;
+         flex-wrap: wrap;
+         gap: 2.3rem;
+         margin: 0.7rem; ;
+       }
+       #div6main2sub1>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div6main2sub1>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div6main2sub2>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div6main2sub2>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div6main2sub3>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div6main2sub3>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div6main2sub4>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div6main2sub4>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div6main2>button{
+         width: 100%;
+         height: 1.9rem;
+         font-family: sans-serif;
+         font-size: 20px;
+         text-align: start;
+         color: blue;
+         border: 0;
+         text-decoration: underline;
+         background-color: whitesmoke;
+       }
+       #div6main2>button:hover{
+         color: red;
+       }
+       article{
+         color: white;
+       }
+       #divmain7{
+         width: 35rem;
+         background-color:whitesmoke;
+         box-sizing: border-box;
+         margin: 0rem;
+         padding: 1rem 0.6rem;
+         position: absolute;
+         top: 74rem;
+         right: 38em;
+        }
+       
+        #div7main1>h2{
+         font-family: sans-serif;
+         font-size:27px;
+         margin-left: 0.6rem;
+       }
+       #div7main1sub1{
+         width:15rem ;
+         padding-right: -0.8rem;
+          border-right: 0.3rem solid black;
+          /* background-color: yellow; */
+       }
+       #div7main2{
+         display: flex;
+         flex-wrap: wrap;
+         gap: 2.3rem;
+         margin: 0.7rem; ;
+       }
+       #div7main2sub1>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div7main2sub1>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div7main2sub2>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div7main2sub2>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div7main2sub3>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div7main2sub3>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div7main2sub4>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div7main2sub4>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div7main2>button{
+         width: 100%;
+         height: 1.9rem;
+         font-family: sans-serif;
+         font-size: 20px;
+         text-align: start;
+         color: blue;
+         border: 0;
+         text-decoration: underline;
+         background-color: whitesmoke;
+       }
+       #div7main2>button:hover{
+         color: red;
+       }
+       #divmain8{
+         width: 35rem;
+         background-color:whitesmoke;
+         box-sizing: border-box;
+         margin: 0rem;
+         padding: 1rem 0.6rem;
+         position: absolute;
+         top: 74rem;
+         right: 75em;
+        }
+       
+        #div8main1>h2{
+         font-family: sans-serif;
+         font-size:27px;
+         margin-left: 0.6rem;
+       }
+       #div8main1sub1{
+         width:15rem ;
+         padding-right: -0.8rem;
+          border-right: 0.3rem solid black;
+          /* background-color: yellow; */
+       }
+       #div8main2{
+         display: flex;
+         flex-wrap: wrap;
+         gap: 2.3rem;
+         margin: 0.7rem; ;
+       }
+       #div8main2sub1>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div8main2sub1>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div8main2sub2>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div8main2sub2>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div8main2sub3>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div8main2sub3>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div8main2sub4>p{
+         font-family: sans-serif;
+         font-size:17px;
+       }
+       #div8main2sub4>img{
+         width: 232px;
+         height: 162px;
+       }
+       #div8main2>button{
+         width: 100%;
+         height: 1.9rem;
+         font-family: sans-serif;
+         font-size: 20px;
+         text-align: start;
+         color: blue;
+         border: 0;
+         text-decoration: underline;
+         background-color: whitesmoke;
+       }
+       #div8main2>button:hover{
+         color: red;
+       }
+       #divmain9{
+         width:14.5rem ;
+         background-color: whitesmoke;
+         box-sizing: border-box;
+         height: 36.8rem;
+         position: absolute;
+         top: 74rem;
+         margin: 0rem 0.4rem;
+         padding: 0rem;
+       }
+       #divmain9>img{
+       width: 100%;
+       height:30rem ;
+       }
+       #divmain9>button{
+         margin-top: 1.5em;
+         width: 100%;
+         height: 1.9rem;
+         font-family: sans-serif;
+         font-size: 20px;
+         text-align: start;
+         color: blue;
+         border: 0;
+         text-decoration: underline;
+         background-color: whitesmoke;
+       }
+       #divmain9>button:hover{
+         color: red;
+       }
+       #divmain10{
+         background-color:white;
+         width: 100%;
+         box-sizing: border-box;
+         padding: 1rem ;
+         margin: .6rem auto;
+         text-align: center;
+         border: 0.1rem solid;
+         margin-top: 68rem;
+       }
+       #divmain10p{
+         margin:0.3rem;
+         padding-top: 1rem;
+         font-family: sans-serif;
+         font-size: 17px;
+         
+       }
+       #divmain10>button{
+         width: 15em;
+         height: 2em;
+         margin: 0.4em;
+         font-family: sans-serif;
+         font-size: 18px;
+         padding: 0.4em;
+         font-weight: bold;
+         background-color: rgb(244, 190, 53);
+         border-radius: 10px;
+       }
+       #divmain10>button:hover{
+         color:rgb(117, 117, 230);
+         text-decoration: underline;
+         transition:  ease 0.4s;
+         border-color: blue;
+         box-shadow: 6px 6px 30px black;
+       }
+       #divmain10pp{
+         padding-top: 0.1rem;
+         font-family: sans-serif;
+         font-size: 17px;  
+       }
+       #divmain10span{
+         color:blue ;
+       }
+       #divmain10span:hover{
+         text-decoration:underline ;
+         color: red;
+         transition: ease 0.4s;
+       }
+       /* #divmain11{
+         margin-top: 65rem;
+       } */
+       #divmain11>button{
+         width: 100%;
+         background-color: #004B91;
+        height: 3.5rem;
+        font-size: 21px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: whitesmoke;
+       }
+       #divmain11>button:hover{
+         background-color: rgb(105, 105, 244);
+         transition: ease 0.4s;
+       }
+       #divmain12{
+         width: 100%;
+         background-color:rgba(5, 5, 72, 0.977);
+         margin: 0rem;
+         padding: 1.5rem;
+         height: 26rem;
+         text-align: center;
+         border-bottom: 0.1rem solid whitesmoke;
+       }
+       #divmain12tab{
+         width: 60%;
+         height:23rem ;
+         font-size: 19px;
+         color: whitesmoke;
+         margin-left: 25rem;
+         font-family: sans-serif;
+         line-height: 25px;
+       }
+       #tabletr{
+        font-weight: bold;
+      
+       }
+       #divmain13{
+         width: 100%;
+         box-sizing: border-box;
+         height: 7rem;
+         background-color:rgba(5, 5, 72, 0.977);
+         margin: 0rem;
+         padding: 1.8rem ;
+         display: flex;
+         justify-content: center;
+         gap: 6rem;
+         position: relative;
+         
+       }
+       #divenmain13{
+            background-color:whitesmoke;
+            width:20em;
+            box-sizing: border-box;
+            margin: 0em ;
+            padding: 0.8em 0.7em;
+            position: absolute;
+            right:31em;
+            top: 1em;
+            display: none;
+            z-index: 999;
+            /* bottom: 10rem; */
+         }
+          #divmain13:hover #divenmain13{
+            display: block;
+            transition: ease 4.2s;
+         }
+         #divensub1{
+         background-color: whitesmoke;
+         box-sizing: border-box;
+         margin:  auto;
+         padding:  auto;
+         font-family: sans-serif;
+         font-size: 18px;
+         padding-bottom: 1.5em;
+         border-bottom: 0.2em solid  rgb(200, 194, 194); ;
+         display: flex;
+         }
+         .divenspan1{
+            font-size: 30px;
+            color: red;
+         }
+         #divensub2{
+         background-color: whitesmoke;
+         box-sizing: border-box;
+         margin:  auto;
+         padding:  auto;
+         font-family: sans-serif;
+         font-size: 18px;
+         padding-bottom: 1.5em;
+         border-bottom: 0.2em solid  rgb(200, 194, 194); ;
+         
+         }
+         .divenspan2{
+            font-size: 22px;
+            color:black;
+         }
+         #divensub1>p{
+          padding-top: 0.25em;
+         }
+         #divenp8{
+            color: blue;
+            text-align: center;
+            padding-top: 0.7em; 
+            text-decoration: underline;
+         }
+         #divensub3{
+         background-color: whitesmoke;
+         box-sizing: border-box;
+         margin:  auto;
+         padding:  0.5em 0em;
+         font-family: sans-serif;
+         font-size: 18px;
+         padding-bottom: 1.5em;
+         border-bottom: 0.2em solid  rgb(200, 194, 194); ;
+        position: relative;
+         }
+         #divensub3>img{
+            width: 1.9rem;
+            
+         }
+         #divenp9{
+            position: absolute;
+            right: 0em;
+            top: 0.6em;
+         }
+         #divenp10{
+            text-align: center;
+            text-decoration: underline;
+            color: blue;
+         }
+       
+
+       #div13main1>img{
+        width: 8rem;
+        height: 2.5rem;
+      margin-top: 0.5rem;
+       }
+       #div13main2{
+         width: 9.5rem;
+         height: 3.5rem;
+         background-color:rgba(5, 5, 72, 0.977);
+         box-sizing: border-box;
+         position: relative;
+         border: 0.1rem solid whitesmoke;
+       }
+       #div13main2:hover{
+         color: red;
+         border-color:yellow;
+         font-weight: bold;
+         border: 0.25rem solid yellow;
+         border-radius: 10px;
+       }
+       #div13main2>p{
+         font-size: 20px;
+         font-family: sans-serif;
+         position: absolute;
+         left: 2.3rem;
+         top: 1rem;
+         color: whitesmoke;
+         
+       }
+       #div13main2span1{
+         position: absolute;
+         top: 1rem;
+         font-size: 22px;
+         left: 0.7rem;
+         color: whitesmoke;
+       }
+       #div13main2span2{
+         position: absolute;
+         right: 01.3rem;
+         font-size: 12px;
+         top: 1rem;
+         color:whitesmoke;
+       }
+       #div13main2span3{
+         position: absolute;
+         right: 1.3rem;
+         font-size: 12px;
+         top: 1.7rem;
+         color:whitesmoke;
+       }
+       #divmain14{
+         width: 100%;
+         background-color:rgba(5, 5, 72, 0.977);
+         box-sizing: border-box;
+         height: 3rem;
+         display: flex;
+         gap: 1rem;
+         align-items: center;
+         padding: 0rem 5rem;
+         font-family: sans-serif;
+         font-size: 18px;
+         text-decoration: none;
+         justify-content: center;
+       }
+       #a1{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a1:hover{
+         font-weight: bold;
+       }
+       #a1::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a1:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a2{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a2:hover{
+         font-weight: bold;
+       }
+       #a2::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a2:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a3{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a3:hover{
+         font-weight: bold;
+       }
+       #a3::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a3:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a4{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a4:hover{
+         font-weight: bold;
+       }
+       #a4::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a4:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a5{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a5:hover{
+         font-weight: bold;
+       }
+       #a5::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a5:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a6{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a6:hover{
+         font-weight: bold;
+       }
+       #a6::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a6:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a7{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a7:hover{
+         font-weight: bold;
+       }
+       #a7::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a7:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a8{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a8:hover{
+         font-weight: bold;
+       }
+       #a8::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a8:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a9{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a9:hover{
+         font-weight: bold;
+       }
+       #a9::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width:100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a9:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a10{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a10:hover{
+         font-weight: bold;
+       }
+       #a10::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a10:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a11{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a11:hover{
+         font-weight: bold;
+       }
+       #a11::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a11:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a12{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a12:hover{
+         font-weight: bold;
+       }
+       #a12::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a12:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a13{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a13:hover{
+         font-weight: bold;
+       }
+       #a13::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a13:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a14{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a14:hover{
+         font-weight: bold;
+       }
+       #a14::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 4.7rem;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a14:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a14{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a14:hover{
+         font-weight: bold;
+       }
+       #a14::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a14:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a15{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a15:hover{
+         font-weight: bold;
+       }
+       #a15::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a15:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a16{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a16:hover{
+         font-weight: bold;
+       }
+       #a16::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a16:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #a17{
+         text-decoration: none;
+         color: whitesmoke;
+       }
+       #a17:hover{
+         font-weight: bold;
+       }
+       #a17::after{
+         content: "";
+         background-color: transparent;
+         display: block;
+         width: 100%;
+         height: 0.1rem;
+         transition: ease 0.3s;
+       }
+       #a17:hover:after{
+         background-color: whitesmoke;
+         font-weight: bold;
+       }
+       #divmain15{
+         width: 100%;
+         background-color: rgba(5, 5, 72, 0.977);
+         box-sizing: border-box;
+         
+         margin: 0rem;
+         padding: 1rem;
+         color: whitesmoke;
+       }
+       #div15maintable{
+       margin: 1rem;
+       width: 50%;
+       font-family: sans-serif;
+       font-size: 18px;
+       margin-left: 25rem;
+       }
+       #div15maintr{
+         font-weight: bold;
+       }
+       #div15maintable1{
+       margin: 3rem;
+       width: 50%;
+       font-family: sans-serif;
+       font-size: 18px;
+       margin-left: 25rem;
+       }
+       #div15maintr1{
+         font-weight: bold;
+       }
+       /* article{
+         color: black;
+         margin-top: 66rem;
+       } */
+       #divmain16{
+        width: 100%;
+        height: 10rem;
+        box-sizing: border-box;
+        margin: 0rem;
+        padding: 1rem;
+        background-color:rgba(5, 5, 72, 0.977);;
+        color:whitesmoke;
+       }
+      #div16main1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-family: sans-serif;
+        font-size: 19px;
+      }
+      #div16main2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.7rem;
+        font-size: 19px;
+        text-decoration: underline;
+      }
+
+      @media (min-width:1024px) ,(max-width:1440px) {
+       body{
+        width: 200%;
+       }
+        #maindiv{
+          /* width: 200%; */
+          height: auto;
+
+        }
+        
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     
+
+       
+       
+       
+
+    
+       
+
+     
+        
+         
+         
+         
+         
+         
+         
+         
+         
+        
+        
+
+        
+
+    </style>
+</head>
+<body>
+<header>
+    <div id="maindiv">
+      
+         <img id="img1" src="amazonlogo.png" alt="">
+      
+   
+   <p id="para1">Delivering to New Delhi 110022</p>
+   <span id="span1"><i class='bx bxs-location-plus'></i></span>
+   <h3 id="h31">Update location</h3>
+   <button id="button1">All <span><i class='bx bx-caret-down'></i></span>
+    <ul id="ul">
+        <li>All Catagories</li>
+        <li>Alexa skills </li>
+        <li>Amazon Devices</li>
+        <li>Amazon Fashion</li>
+        <li>Amazon Fresh</li>
+        <li>Amazon Pharmacy</li>
+        <li>Appliances</li>
+        <li>Apps and games</li>
+        <li>Audible Audiobooks</li>
+        <li>Baby</li>
+        <li>Beauty</li>
+        <li>Books</li>
+        <li>Car & Motorbike</li>
+        <li>Clothing & Accessories</li>
+        <li>Collectibles</li>
+        <li>Computers and Accessories</li>
+        <li>Deals</li>
+        <li>Electronics</li>
+        <li>Furniture</li>
+        <li>Garden & outdoors</li>
+        <li>Gift cards </li>
+        <li>Grocery and goument factors</li>
+        <li>Health and kitchen</li>
+        <li>Industrial and scientific</li>
+        <li>Jwellery</li>
+        <li>Kindle  store</li>
+        <li>Luggage and Bags</li>
+        <li>Luxury Beauty</li>
+        <li>movies and tv shows</li>
+        <li>Mp3 musics</li>
+        <li>Music</li>
+        <li>Musical instruments</li>
+        <li>Office products</li>
+        <li>Office products</li>
+        <li>pet supplies </li>
+        <li>prime video</li>
+        <li>shoes and handbags</li>
+        <li>software</li>
+        <li>toys and games</li>
+        <li>sports ,fitness and outdoors</li>
+        <li>under 500</li>
+        <li>Video games</li>
+        <li>Watches</li>
+        <li>Subscribe and Save</li>
+    </ul>
+</button>
+   <input type="text" value="Search Amazon.in" name="Search" placeholder="Search Amazon.in" focus="option">
+   <button id="button2"><i class='bx bx-search'></i></button>
+   <img id="img2" src="Flag_of_India.png" alt="">
+   <h2 id="en">EN 
+      <div id="divenmain">
+         <div id="divensub1">
+           <span class="divenspan1"><i class='bx bx-radio-circle-marked'></i></span>
+           <p id="divenenp">  English - EN</p>
+         </div>
+          <div id="divensub2">
+           <p id="divenp1"> <span class="divenspan2"><i class='bx bx-radio-circle' ></i></span>हिंदी - HI</p>
+           <p id="divenp2"> <span class="divenspan2"><i class='bx bx-radio-circle' ></i></span>தமிழ் - TA </p>
+           <p id="divenp3"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> తెలుగు - TE</p>
+           <p id="divenp4"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> ಕನ್ನಡ - KN</p>
+           <p id="divenp5"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> മലയാളം - ML</p>
+           <p id="divrenp6"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> বাংলা - BN</p>
+           <p id="divenp7"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> मराठी - MR</p>
+           <p id="divenp8"> Learn more</p>
+          </div>
+          <div id="divensub3">
+           <img src="Flag_of_India.png" alt="">
+           <p id="divenp9">You are shopping on Amazon.in </p>
+           <p id="divenp10">Change country code</p>
+          </div>
+        </div>
+   </h2>
+   <span id="down"><i class='bx bx-caret-down'></i></span>
+   <p id="hello"> Hello, Signin  </p>
+   <h3 id="al">Account & Lists
+      <div id="dival">
+         <button>Sign in</button>
+         <p>New customer? <span id="spandival">Start here</span></p>
+         <hr>
+        <div id="divalmain">
+         <div id="divalsub1">
+            <h3>Your Lists</h3>
+            <p>Create a wishlist</p>
+            <p>Wish from any website</p>
+            <p>Baby wishlist</p>
+            <p>Discover your style</p>
+            <p>Explore showroom</p>
+         </div>
+         <div id="divalsub2">
+            <h3>Your Account</h3>
+            <p>Your Account</p>
+            <p>Your Orders</p>
+            <p>Your wishlist</p>
+            <p>Your recommendations</p>
+            <p>Your Prime Memberships</p>
+            <p>Your Prime video</p>
+            <p>Your Subscribe & save items</p>
+            <p> Memberships & subscriptions</p>
+            <p> Your seller Account </p>
+            <p> Manage your content and devices</p>
+            <p>Your free Amazon Business Account</p>
+            
+         </div>
+        </div>
+      </div>
+   </h3>
+   <span id="down1"><i class='bx bx-caret-down'></i></span>
+   <p id="returns">Returns </p>
+   <h3 id="orders">& Orders</h3>
+   <span id="carticon"><i class='bx bx-cart'></i></span>
+   <h3 id="cart">Cart</h3>
+    </div>
+
+<div id="header">
+   <div id="headsub1">
+      <span id="headspan1"><i class='bx bx-menu'></i>
+         <div id="headermenu">
+            <div id="headersub1">
+                     <h2>Trending</h2> 
+                     <p>Best sellers</p>
+                     <p>New Releases</p>
+                     <p>Movers and shalkers</p>
+                     
+                   </div>
+                   <div id="headersub2">
+                    <h2>Digital Content and Devices</h2>
+                    <p>Amazon miniTV- Free entertainment</p>
+                    <p>Echo & Alexa</p>
+                    <p>Fire TV</p>
+                    <p>Kindle E- Readers & ebooks</p>
+                    <p>Audible Aidiobooks</p>
+                    <p>Amazon Prime video</p>
+                    <p>Amazon Prime Music</p>
+                   </div>
+                   <div id="headersub3"> 
+                     <h2>Shop by Catagories</h2>
+                      <p> Mobile, Computers</p>
+                    <p> Tv,Appliances,Electronics</p>
+                    <p> Mens's Fashion</p>
+                     <p>Women's Fashion </p>
+                    <p> See all <span id="down"> <i class='bx bx-chevron-down'></i></span></p>
+                   </div>
+                    <div id="headersub4">
+                     <h2>Program & Features</h2>
+                     <p>Amazon Pay </p>
+                     <p>Gift Cards & Mobile Recharge</p>
+                    <p>Amazon LaunchPad </p>
+                    <p>Handlooms and Handicrafts </p>
+                      <p> see all <i class='bx bx-chevron-down'></i></p>
+                    </div>
+                    <div id="headersub5">
+                     <h2>Help & Settings</h2>
+                     <p>Your Account </p>
+                     <p> Customer Service</p>
+                      <p>Sign in</p>
+                    </div>
+                   <span class="hr1"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr2"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr3"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr4"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr5"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr6"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr7"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr8"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr9"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr10"><i class='bx bx-chevron-right'></i></span>
+                   <span class="hr11"><i class='bx bx-chevron-right'></i></span>
+                  </div>
+      </span>
+    <span id="headspan2">All</span>
+   </div>
+   <!-- <nav class="nav"> -->
+      <a class="nav1" href="https://www.amazon.in/alm/storefront?almBrandId=ctnow&ref_=nav_cs_fresh">Fresh</a>
+      <a class="nav2" href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">Amazon miniTV</a>
+      <a class="nav3" href="https://www.amazon.in/b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3">Sell</a>
+      <a class="nav4" href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers">Best seller</a>
+      <a class="nav5" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles">Mobile</a>
+      <a class="nav6" href="https://www.amazon.in/deals?ref_=nav_cs_gb">Today's deals</a>
+      <a class="nav7" href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help">Customer service</a>
+      <a class="nav8" href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember">Prime</a>
+      <a class="nav9" href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics">Electronics</a>
+      <a class="nav10" href="https://www.amazon.in/gp/new-releases/?ref_=nav_cs_newreleases">New Releases</a>
+      <a class="nav11" href="https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home">Home and kitchen</a>
+      <a class="nav12" href="https://www.amazon.in/gp/sva/dashboard?ref_=nav_cs_apay">Amazon Pay</a>
+   <!-- </nav> -->
+</div>
+</header>
+  
+         
+<div id="divbackground">
+   <!-- <img src="midbackground.webp" alt=""> -->
+   <h2 >Starting ₹199</h2>
+   <p>Bags,luggage & wallets</p>
+  
+  <img src="divbackgroundimage.png" alt="">
+
+  <span id="divright"><i class='bx bx-chevron-right'></i></span>
+  <span id="divleft">
+   <i class='bx bx-chevron-left'></i>
+  </span>
+</div>
+   <div id="divmain2">
+    <div id="divmain">
+      <h2 id="h2a">Appliances for your home </h2>
+      <H2>Up to 55% off </H2>
+    </div>
+      <div id="divmainsub">
+       <div id="divsub1">
+         <img src="ac.png" alt="">
+         <p>Air Conditioner</p>
+      </div>
+       <div id="divsub2"> 
+         <img src="fridge.png" alt="">
+         <p>Refrigerater</p>
+      </div>
+       <div id="divsub3">
+         <img src="microwave.png" alt="">
+         <p>Microwave</p>
+       </div>
+       <div id="divsub4">
+         <img src="washing machine.png" alt="">
+         <p>Washing Machine</p>
+       </div>
+       <button>See more</button>
+      </div>
+      
+
+   </div>
+   <div id="divmain3">
+    <div id="div3main1">
+      <h2  id="sub1">Up to 75% off</h2>
+    <h2>Headphones</h2>
+    </div>
+    <div id="div3main2">
+     <div id="divmain2sub1">
+      <img src="divmain3.1.png" alt="">
+      <p>Up to 75% off</p>
+     </div>
+     <div id="divmain2sub2" >
+      <img src="divmain3.2.png" alt="">
+      <p>Up to 75% off</p>
+     </div>
+     <div id="divmain2sub3">
+      <img src="divmain3.3.png" alt="">
+      <p>Up to 75% off</p>
+     </div>
+     <div id="divmain2sub4">
+      <img src="divmain3.4.png" alt="">
+      <p>Up to 75% off</p>
+    
+     </div>
+     <button>See all offers</button>
+    </div>
+   </div>
+   <div id="divmain4">
+     <div id="div4main1">
+      <h2 id="div4main1sub">Up to 60% off</h2>
+      <h2>Styles for men</h2>
+     </div>
+     <div id="div4main2">
+       <div id="div4main2sub1">
+         <img src="div4.1.png" alt="">
+         <p>Clothing</p>
+         </div>
+       <div id="div4main2sub2">
+         <img src="div4.2.png" alt="">
+         <p>Watches</p>
+       </div>
+       <div id="div4main2sub3">
+         <img src="div4.3.png" alt="">
+         <p>Footwear</p>
+       </div>
+       <div id="div4main2sub4">
+         <img src="div4.4.png" alt="">
+         <p>Bags & wallets</p>
+       </div>
+       <button>End of season sale</button>
+     </div>
+   </div>
+   <div id="divmain5">
+      <img src="div5.1.png" alt="">
+      <button>Mirror fo u</button>
+   </div>
+  
+   <div id="divmain6">
+   <div id="div6main1">
+   <h2>Revamp your home in style</h2>
+   </div>
+   <div id="div6main2">
+   <div id="div6main2sub1">
+      <img src="div6.1.png" alt="">
+      <p>Cushion covers,bedsheets </p>
+   </div>
+   <div id="div6main2sub2">
+      <img src="div6.2.png" alt="">
+      <p>Fugures,vases and more</p>
+   </div>
+   <div id="div6main2sub3">
+      <img src="div6.3.png" alt="">
+      <p>Home storage</p>
+   </div>
+   <div id="div6main2sub4">
+      <img src="div6.4.png" alt="">
+      <p>Lightining solutions</p>
+   </div>
+   <button>Explore all</button>
+   </div>
+   </div>
+   <div id="divmain7">
+    <div id="div7main1">
+    <h2 id="div7main1sub1">Up to 60% off</h2>
+    <h2>Styles for Women</h2>
+    </div>
+    <div id="div7main2">
+     <div id="div7main2sub1">
+      <img src="div7.1.png" alt="">
+      <p>Women Clothing</p>
+     </div>
+     <div id="div7main2sub2">
+      <img src="div7.2.png" alt="">
+      <p>Footwear + Handbags</p>
+     </div>
+     <div id="div7main2sub3">
+      <img src="div7.3.png" alt="">
+      <p>Watches</p>
+     </div>
+     <div id="div7main2sub4">
+     <img src="div7.4.png" alt="">
+     <p>Fashion Jwellery</p>
+     </div>
+     <button>End of season sale</button>
+    </div>
+   </div>
+   <div id="divmain8">
+   <div id="div8main1">
+   <h2 id="div8main1sub1"> Starting ₹99</h2>
+   <h2>All your home needs</h2>
+   </div>
+   <div id="div8main2">
+   <div id="div8main2sub1">
+      <img src="div8.1.png" alt="">
+      <p>Spin,mops and more</p>
+   </div>
+   <div id="div8main2sub2">
+      <img src="div8.2.png" alt="">
+      <p>Bathroom Accessories</p>
+   </div>
+   <div id="div8main2sub3">
+      <img src="div8.3.png" alt="">
+   <p>Hammer and more</p>
+   </div>
+   <div id="div8main2sub4">
+      <img src="div8.4.png" alt="">
+      <p>Extension boards</p>
+   </div>
+   <button>Explore all</button>
+   </div>
+   </div>
+   <div id="divmain9">
+      <img src="div5.1.png" alt="">
+      <button>Mirror fo u</button>
+   </div>
+   <div id="divmain10">
+<p id="divmain10p">See personalised recommendations</p>
+<button>Sign in</button>
+<p id="divmain10pp">New customer? <span id="divmain10span">Start here.</span></p>
+   </div>
+   <div id="divmain11">
+      <button>Back to top</button>
+   </div>
+   <footer>
+   <div id="divmain12">
+      <table id="divmain12tab">
+         <th >
+           <tr  id="tabletr">
+            <td>Get to know us</td>
+            <td> Connect with us</td>
+            <td>Make  money with us</td>
+            <td>Let us help you</td>
+           </tr>
+         </th>
+         <tbody>
+            <tr>
+               <td>About us</td>
+               <td>Facebook</td>
+               <td>Sell on Amazon</td>
+               <td>Covid-19 and Amazon</td>
+            </tr>
+            <tr>
+               <td>Careers</td>
+               <td>Twitter</td>
+               <td>Sell under Amazon accelerator </td>
+               <td>Your Account</td>
+            </tr>
+            <tr>
+               <td>Press Release</td>
+               <td>Instagram</td>
+               <td>Protect and Build your Brand</td>
+               <td>Returns centre</td>
+            </tr>
+            <tr>
+               <td>Amazon Science</td>
+               <td></td>
+               <td>Amazon global seeling</td>
+               <td>100% Purchase Protection</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td>Become an affilate</td>
+               <td>Amazon App Download</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td>Fulfilment  by Amazon</td>
+               <td>Help</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td>Advertise your products</td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <div id="divmain13">
+      <div id="div13main1">
+         <img src="amazonlogo.png" alt="">
+      </div>
+      <div id="div13main2">
+        <span id="div13main2span1"> <i class='bx bx-world'></i></span>
+         <p>English</p>
+         <span id="div13main2span2"><i class='bx bxs-up-arrow'></i></span>
+         <span id="div13main2span3"><i class='bx bxs-down-arrow' ></i></span>
+      </div>
+      <div id="divenmain13">
+        <div id="divensub1">
+          <span class="divenspan1"><i class='bx bx-radio-circle-marked'></i></span>
+          <p id="divenenp">  English - EN</p>
+        </div>
+         <div id="divensub2">
+          <p id="divenp1"> <span class="divenspan2"><i class='bx bx-radio-circle' ></i></span>हिंदी - HI</p>
+          <p id="divenp2"> <span class="divenspan2"><i class='bx bx-radio-circle' ></i></span>தமிழ் - TA </p>
+          <p id="divenp3"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> తెలుగు - TE</p>
+          <p id="divenp4"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> ಕನ್ನಡ - KN</p>
+          <p id="divenp5"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> മലയാളം - ML</p>
+          <p id="divrenp6"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> বাংলা - BN</p>
+          <p id="divenp7"><span class="divenspan2"><i class='bx bx-radio-circle' ></i></span> मराठी - MR</p>
+          <p id="divenp8"> Learn more</p>
+         </div>
+         <div id="divensub3">
+          <img src="Flag_of_India.png" alt="">
+          <p id="divenp9">You are shopping on Amazon.in </p>
+          <p id="divenp10">Change country code</p>
+         </div>
+       </div>
+   </div>
+   <div id="divmain14">
+      <a id="a1" href="">Australlia</a>
+      <a id="a2" href="">Brazil</a>
+      <a id="a3" href="">Canada</a>
+      <a id="a4"  href="">China</a>
+      <a id="a5" href="">France</a>
+      <a id="a6" href="">Germany</a>
+      <a id="a7" href="">Italy</a>
+      <a id="a8" href="">Japan</a>
+      <a id="a9" href="">Mexico</a>
+      <a id="a10" href="">Netherlands</a>
+      <a id="a11" href="">Poland</a>
+      <a id="a12" href="">Singapore</a>
+      <a id="a13" href="">Spain</a>
+      <a id="a14" href="">Turkey</a>
+      <a id="a15" href="">United Arab Emirates</a>
+      <a id="a16" href="">United Kingdom</a>
+      <a id="a17" href="">United States</a>
+   </div>
+   <div id="divmain15">
+      <table id="div15maintable">
+         <th>
+            <tr id="div15maintr">
+               <td>AbeBooks</td>
+               <td>Amazon Webservices</td>
+               <td>Audible</td>
+               <td>IMDB</td>
+               
+            </tr>
+         </th>
+         <tbody>
+            <tr>
+               <td>Books,Art</td>
+               <td>Scalable cloud</td>
+               <td>Download</td>
+               <td>Movies,TV</td>
+            </tr>
+            <tr>
+               <td>& Collectibles</td>
+               <td>Computing services</td>
+               <td>Audio Books</td>
+               <td>& celebrities</td>
+            </tr>
+         </tbody>
+      </table>
+      <table id="div15maintable1">
+         <th>
+            <tr id="div15maintr1">
+               <td>Shopbop</td>
+               <td>Amazon Business</td>
+               <td>Prime Now</td>
+               <td>Amazon Prime Music</td>
+            </tr>
+         </th>
+         <tbody>
+            <tr>
+               <td>Designer</td>
+               <td>Everything for</td>
+               <td>2-hour delivery</td>
+               <td>100 milliions songs,ad-free</td>
+            </tr>
+            <tr>
+               <td>Fashion Brands</td>
+               <td>Your Business</td>
+               <td>On Everyday items</td>
+               <td>Over 15 millions podcast episodes</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <div id="divmain16">
+    <div id="div16main1">
+      <h4 id="div16main1sub1">Condition for use</h4>
+      <h4 id="div16main1sub2">Privacy Notice</h4>
+      <h4 id="div16main1sub3"> Interest free-ads</h4>
+    </div>
+    <div id="div16main2">
+      <span><i class='bx bx-copyright'></i></span>
+       <p> 1996-2024,Amazon.com,Inc.or its affiliates</p>
+    </div>
+   </div>
+</footer>
+ 
+</body>
+</html>
