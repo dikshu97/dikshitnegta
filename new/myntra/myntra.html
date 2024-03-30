@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Myntra</title>
+    <!-- rgb(240, 177, 239); -->
+    <style>
+        *{
+            border: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+      
+        body{
+            /* font-size: 100px; */
+            width: 100%;
+            background-color:whitesmoke;
+            /* padding: 5px 10px;
+            margin: 5px auto ; */
+            box-sizing: border-box;
+           
+            /* font-size: 50px; */
+        }
+        #header{
+            width: 100%;
+            height: 110px;
+            box-sizing: border-box;
+            background-color: white;
+            display: flex;
+            /* justify-content: space-evenly; */
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            position: fixed ;
+            /* position: sticky; */
+            top:0px;
+            z-index: 100;
+            box-shadow: -12px 9px 20px 0px #000000;
+            
+
+        }
+        #Men{
+            font-family: sans-serif;
+            font-style: normal;
+            transition: ease 1s;
+            /* position: relative; */
+        }
+        #Men:hover{
+         color: red;
+        }
+
+            #Men::after{
+                content: "";
+                background-color:transparent;
+                width: 0px;
+                height: 7px;
+                display: block;
+                position: absolute;
+                bottom: 3px;
+              transition:ease 1s;
+                
+            }
+            #Men:hover:after{
+             background-color: darkred;
+            width: 53px;
+            color: red;
+            }
+            #Women{
+            font-family: sans-serif;
+            font-style: normal;
+            transition: ease 1s;
+            /* position: relative; */
+        }
+        #Women:hover{
+         color: red;
+        }
+
+            #Women::after{
+                content: "";
+                background-color:transparent;
+                width: 0px;
+                height: 7px;
+                display: block;
+                position: absolute;
+                bottom: 3px;
+              transition:ease 1s;
+                
+            }
+            #Women:hover:after{
+             background-color: darkred;
+            width: 93px;
+            color: red;
+            }
+            #Kids{
+            font-family: sans-serif;
+            font-style: normal;
+            transition: ease 1s;
+            /* position: relative; */
+        }
+        #Kids:hover{
+         color: red;
+        }
+
+            #Kids::after{
+                content: "";
+                background-color:transparent;
+                width: 0px;
+                height: 7px;
+                display: block;
+                position: absolute;
+                bottom: 3px;
+              transition:ease 1s;
+                
+            }
+            #Kids:hover:after{
+             background-color: darkred;
+            width: 53px;
+            color: red;
+            }
+            #beauty{
+            font-family: sans-serif;
+            font-style: normal;
+            transition: ease 1s;
+            /* position: relative; */
+        }
+        #beauty:hover{
+         color: red;
+        }
+
+            #beauty::after{
+                content: "";
+                background-color:transparent;
+                width: 0px;
+                height: 7px;
+                display: block;
+                position: absolute;
+                bottom: 3px;
+              transition:ease 1s;
+                
+            }
+            #beauty:hover:after{
+             background-color: darkred;
+            width: 80px;
+            color: red;
+            }
+            #studio{
+            font-family: sans-serif;
+            font-style: normal;
+            transition: ease 1s;
+            /* position: relative; */
+            /* text-decoration:line-through; */
+        }
+        #studio:hover{
+         color: red;
+        }
+
+            #studio::after{
+                content: "";
+                background-color:transparent;
+                width: 0px;
+                height: 7px;
+                display: block;
+                position: absolute;
+                bottom: 3px;
+              transition:ease 1s;
+                
+            }
+            #studio:hover:after{
+             background-color: darkred;
+            width: 73px;
+            color: red;
+            }
+            #living{
+            font-family: sans-serif;
+            font-style: normal;
+            transition: ease 1s;
+            /* position: relative; */
+        }
+        #living:hover{
+         color: red;
+        }
+
+            #living::after{
+                content: "";
+                background-color:transparent;
+                width: 0px;
+                height: 7px;
+                display: block;
+                position: absolute;
+                bottom: 3px;
+              transition:ease 1s;
+                
+            }
+            #living:hover:after{
+             background-color: darkred;
+            width: 183px;
+            color: red;
+            }
+
+        input{
+            width: 750px;
+            height: 50px;
+            background-color: whitesmoke;
+            color: grey;
+            font-size: 23px;
+            border-radius: 0px 15px 15px 0px;
+            border: 0px;
+            
+            
+        }
+        #header>img{
+            width: 200px;
+            height: 110px;
+           background-color: whitesmoke;
+           
+        }
+        #p1{
+            height: 51px;
+            width: 50px;
+            background-color:whitesmoke;
+            font-size: 45px;
+        text-align: center;
+        margin-right: -20px;
+        border-radius: 15px 0px 0px 15px;
+        margin-left: 50px;
+        color: grey;
+        
+        }
+        #p2{
+        font-size: 40px;
+        position: absolute;
+        right: 280px;
+        top: 30px;
+        
+        }
+        #p3{
+            font-size: 40px;
+            position: absolute;
+            top: 30px;
+            right: 180px;
+            
+            
+        }
+        #p4{
+            font-size: 40px;
+            position: absolute;
+            right: 80px;
+            top: 30px;
+            
+        }
+        #h1{
+            position: absolute;
+            top: 70px;
+            right: 270px;
+            font-size: 21px;
+        
+        }
+        #h2{
+            position: absolute;
+            top: 70px;
+            right: 160px;
+            font-size: 21px;
+            
+        }
+        #h3{
+            position: absolute;
+            top: 70px;
+            right: 83px;
+            font-size: 21px;  
+        }
+        #divmain1{
+            width: 100%;
+            height: 100px;
+            color: black;
+            background-color: rgb(200, 227, 245);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            z-index: -1;
+        }
+        #para{
+            font-size: 25px;
+            
+        }
+        #span1{
+            color: red;
+            font-size: 30px;
+            gap: 10px;
+            margin: 10px;
+        }
+        #span2{
+            color: red;
+            font-size: 30px;
+            margin: 10px;
+        }
+        #span3{
+            color: red;
+            font-size: 30px;
+            margin: 10px;
+        }
+        #para1{
+            font-size: 21px;
+        }
+        #divsub1{
+            background-color: whitesmoke;
+            height: 300px;
+            width: 55%;
+            text-align: center;
+            margin-left: 70px;
+            margin-top: 30px;
+            border-radius: 20px 80px 80px 20px;
+        }
+        #divsub1>h1{
+            font-size: 100px;
+            padding-top: 50px;
+        }
+        #divsub1>h3{
+            font-size: 40px;
+        }
+        #divmain2{
+            display: flex;
+            position: relative;
+        }
+        #divsub2{
+            height: 300px;
+            background-color: rgb(241, 149, 116);
+            width: 41%;
+            margin-top: 30px;
+            text-align: center;
+            border-radius: 80px 20px 20px 80px;
+        }
+        #divsub2>h2{
+            font-size: 85px;
+            margin-top: 60px;
+            color: aliceblue;
+        }
+        #subdiv{
+            width: 210px;
+            height: 60px;
+            background-color: whitesmoke;
+            margin-left: 350px;
+            color: black;
+            font-size: 22px;
+        }
+        #subdiv>h2{
+            padding-top: 8px;
+        }
+        #FLAT{
+            font-family: sans-serif;
+            font-size: 30px;
+            background-color: grey;
+            height: 60px;
+            width: 450px;
+            transform: rotate(-90deg);
+            text-align: center;
+            padding: 10px;
+            color: azure;
+            position: absolute;
+            position: fixed;
+            box-sizing: border-box;
+            right: -200px;
+            top: 550px;
+            z-index: 999
+            
+        }
+        #divmain3{
+            background-image: url(background1.jpg);
+            height: 500px;
+            margin: 20px;
+            padding: 10px;
+            /* box-sizing: border-box; */
+            position: relative;
+            z-index: -1;
+
+        }
+        #button2{
+            width: 150px;
+            height: 50px;
+            background-color: rgb(185, 167, 78);
+            font-size: 26px;
+            border-radius: 20px;
+            padding: 10px;
+            left: 150px;
+            bottom: 50px;
+            position: absolute;
+        }
+        
+        #span31{
+        color: rgb(185, 167, 78);
+        background-color:purple;
+        width: 90px;
+        height: 90px;
+        font-size: 26px;
+        border-radius: 50%;
+        }
+        #button3{
+            width: 150px;
+            height: 50px;
+            background-color: rgb(185, 167, 78);
+            font-size: 26px;
+            border-radius: 20px;
+            padding: 10px;
+            position: absolute;
+            right: 150px;
+            bottom: 50px;
+        }
+        #span32{
+        color: rgb(185, 167, 78);
+        background-color:purple;
+        width: 90px;
+        height: 90px;
+        font-size: 26px;
+        border-radius: 50%;
+        }
+        #hh1{
+        color:rgba(238, 130, 238, 0.949);
+        font-size: 75px;
+        font-family: sans-serif;
+        font-style: italic;
+        position: absolute;
+        right:  1100px;
+        top: 100px;
+        
+        }
+        #hh2{
+         color:violet;
+        font-size: 75px;
+        font-family: sans-serif;
+        font-style: italic;
+        position: absolute;
+        right:  1200px;
+        top: 160px;
+        }
+        #button1{
+         height: 35px;
+         width: 150px;
+        background-color: orange;
+        color: whitesmoke;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 19px;
+        border-radius: 30px;
+        position: absolute;
+        right:  1230px;
+        top: 240px;
+        }
+        #divmain3>p{
+         font-size: 100px;
+         font-family: sans-serif;
+         font-weight: bold;
+         color: orange;
+         position: absolute;
+         right:  1100px;
+         bottom: 50px;
+
+        }
+        #button4{
+            width: 665px;
+            height: 60px;
+            position: absolute;
+            bottom:-60px;
+            left: 0px;
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: bold;
+            background-color: rgb(148, 148, 93);
+            color: whitesmoke;
+        } 
+        #button5{ width: 665px;
+            height: 60px;
+            position: absolute;
+            bottom:-60px;
+            left: 650px;
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: bold;
+           background-color: blueviolet;
+           color: whitesmoke;
+        }
+        #button6{
+            width: 685px;
+            height: 60px;
+            position: absolute;
+            bottom:-60px;
+            left: 1300px;
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: bold;
+            background-color: blue;
+            color: whitesmoke;
+        }
+        #divmain4{
+            margin-top:70px;
+            background-color: aliceblue;
+            width: 100%;
+            box-sizing: border-box;
+            /* padding: 5px; */
+
+            
+        }
+        #divmain4>.head1{
+            font-size: 80px;
+            text-align: center;
+            color:darkblue;
+            font-family: sans-serif;
+            font-weight: bold;
+            box-shadow: inset 5px solid blue ;
+            background-color: rgba(227, 227, 115, 0.47);
+            font-style: italic;
+        }
+        .head2{
+            text-align: center;
+            color: purple;
+            font-family: sans-serif;
+            font-size: 35px;
+            font-style: italic;
+            background-color: rgba(104, 175, 175, 0.619);
+        }
+        #divmain5{
+           display: flex;
+           z-index: -1;
+        }
+        #div5sub1{
+            background-color: aliceblue;
+            width: 28%;
+            box-sizing: border-box;
+            margin: 5px;
+           
+            padding: 15px;
+            background-color: blue;
+        }
+        #div5sub1>.h1{
+            text-align: center;
+            color: aliceblue;
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+        #div5sub1>.h2{
+            text-align: center;
+            color: whitesmoke;
+            font-family: sans-serif;
+            }
+        #div5sub2{
+            width: 200px;
+            color: whitesmoke;
+            margin: 5px;
+            text-align: center;
+            background-color: blue;
+             padding: 15px;
+             margin-left: -15px;
+             border-left: 15px solid black;
+             border-width: 3px;
+             margin-right: 400px;
+             
+        }   
+        #div5sub2>.h3{
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+        } 
+        #div5sub2>.button1{
+            width: 170px;
+            height: 40px;
+            font-size:  22px;
+            font-style: normal;
+            font-weight: bold;
+            color: whitesmoke;
+            background-color: orange;
+            border-radius: 30px;
+           
+        }
+        #div5sub3{
+            background-color: aliceblue;
+            width: 28%;
+            box-sizing: border-box;
+            margin: 5px;
+           
+            padding: 15px;
+            background-color: blue;  
+        }
+        #div5sub3>.h4{
+            text-align: center;
+            color: aliceblue;
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+        #div5sub3>.h5{
+            text-align: center;
+            color: whitesmoke;
+            font-family: sans-serif;
+            }
+            #div5sub4{
+            width: 200px;
+            color: whitesmoke;
+            margin: 5px;
+            text-align: center;
+            background-color: blue;
+             padding: 15px;
+             margin-left: -15px;
+             border-left: 15px solid black;
+             border-width: 3px;
+             
+        }   
+            #div5sub4>.h6{
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+        } 
+        #div5sub4>.button2{
+            width: 170px;
+            height: 40px;
+            font-size:  22px;
+            font-style: normal;
+            font-weight: bold;
+            color: whitesmoke;
+            background-color: orange;
+            border-radius: 30px;
+           
+        }
+        #divmain6>.head1{
+            font-size: 80px;
+            text-align: center;
+            color:rgba(209, 158, 167, 0.778);
+            font-family: sans-serif;
+            font-weight: bold;
+            box-shadow: -4px 7px 25px 5px darkblue; ;
+            background-color: rgba(172, 255, 47, 0.529);
+            font-style: italic;}
+            #divmain7{
+               display: flex;
+               justify-content: space-evenly;
+            }
+            #div7sub1{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div7sub1>img{
+                width: 100%;
+            }
+            #div7sub1>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div7sub1>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div7sub1>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+            #div7sub2{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div7sub2>img{
+                width: 100%;
+            }
+            #div7sub2>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div7sub2>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div7sub2>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+            #div7sub3{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div7sub3>img{
+                width: 100%;
+            }
+            #div7sub3>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div7sub3>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div7sub3>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+            #div7sub4{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div7sub4>img{
+                width: 100%;
+            }
+            #div7sub4>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div7sub4>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div7sub4>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+            #div7sub5{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div7sub5>img{
+                width: 100%;
+            }
+            #div7sub5>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div7sub5>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div7sub5>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+            #div7sub6{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div7sub6>img{
+                width: 100%;
+            }
+            #div7sub6>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div7sub6>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div7sub6>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+            #divmain8{
+               display: flex;
+               justify-content: space-evenly;
+            }
+            #div8sub1{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div8sub1>img{
+                width: 100%;
+            }
+            #div8sub1>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div8sub1>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div8sub1>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+         
+            #div8sub2{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div8sub2>img{
+                width: 100%;
+            }
+            #div8sub2>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div8sub2>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div8sub2>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+           
+            #div8sub3{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div8sub3>img{
+                width: 100%;
+            }
+            #div8sub3>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div8sub3>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div8sub3>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+         
+            #div8sub4{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div8sub4>img{
+                width: 100%;
+            }
+            #div8sub4>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div8sub4>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div8sub4>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+           
+            #div8sub5{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div8sub5>img{
+                width: 100%;
+            }
+            #div8sub5>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div8sub5>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div8sub5>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+          
+            
+            #div8sub6{
+                width: 16%;
+                background-color:red;
+                box-sizing: border-box;
+                padding-bottom: 10px ;
+                margin: 0px;
+            }
+            #div8sub6>img{
+                width: 100%;
+            }
+            #div8sub6>h2{
+                color: whitesmoke;
+                font-family: sans-serif;
+                font-style: normal;
+                background-color: red;
+              text-align: center;
+            }
+            #div8sub6>p{
+                font-size: 45px;
+                font-family: sans-serif;
+                color: aliceblue;
+                text-align: center;
+            }
+            #div8sub6>h3{
+                font-family: sans-serif;
+                font-style: normal;
+                color: aliceblue;
+                text-align: center;
+                font-size: 25px;
+            }
+          
+
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+<header>
+<div id="header">
+    <img src="myntra.png" alt="">
+   <h2 id="Men" >Men</h2>
+   <!-- <ul>
+    <li>T-Shirts</li>
+    <li>Casual Shirts</li>
+    <li>Formal Shirts</li>
+    <li>Sweaters</li>
+</ul> -->
+   <h2 id="Women">Women</h2>
+   <h2 id="Kids">Kids</h2>
+   <h2 id="living">home and living</h2>
+   <h2 id="beauty">beauty</h2>
+   <h2 id="studio">studio</h2>
+ 
+    <p id="p1" > <i class='bx bx-search'></i></p>
+    <input type="text" placeholder="Search for product,brands and more">
+  
+    <p id="p2" ><i class='bx bx-user' ></i></p>
+    <p id="p3" ><i class='bx bx-heart'></i></p>
+   <p id="p4"  > <i class='bx bx-shopping-bag' ></i></p>
+   <h3 id="h1">Profile</h3>
+   <h3 id="h2">Wishlist</h3>
+   <h3 id="h3">Bag</h3>
+
+</div>
+<div id="divmain1" >
+   <p id="para">Myntra b'day blast ends in </p>
+   <p id="para1"><span id="span1">13</span> H: <span id="span2">27</span> M : <span id="span3">03</span> S</p>
+</div>
+   
+    
+</header>
+<div id="divmain2">
+    <div id="divsub1">
+        <h1>FLAT <i class='bx bx-rupee'></i>500 OFF </h1>
+    <h3><i class='bx bx-plus' ></i>Free shipping on your 1st 0rder</h3>
+    </div>
+    <div id="divsub2">
+        <h2>USE CODE</h2>
+        <div id="subdiv"><h2>MYNTRA500</h2></div>
+    </div>
+</div>
+<div id="FLAT"><h2>FLAT ₹500 OFF <i class='bx bx-up-arrow' ></i></h2></div>
+<div id="divmain3">
+    <!-- <img src="myntra.png" alt=""> -->
+    <h2 id="hh1">Birthday</h2>
+    <h2 id="hh2">Blast</h2>
+    <button id="button1">Starts March 2</button>
+    <p>50-90% Off</p> 
+    <button id="button2">HER <span id="span31"><i class='bx bxs-chevron-right'></i></span></button>
+    <button id="button3">HIM <span id="span32"><i class='bx bxs-chevron-right'></i></span></button>
+    <button id="button4"><span id="span33"><i class='bx bx-check-circle'></i></span>100% ORIGNAL PRODUCTS</i></button>
+    <button id="button5"><span id="span34"><i class='bx bx-rupee' ></i></span> EASY RETURNS AND REFUNDS</button>
+    <button id="button6"><span id="span35"><i class='bx bxs-lock'></i></span> 100% SECURE PAYMENTS</button>
+</div>
+<div id="divmain4" >
+    <h2 class="head1">coupons</h2>
+    <h2 class="head2">corner</h2>
+</div>
+<div id="divmain5">
+   <div id="div5sub1">
+    <h2 class="h1">Flat 100% 0ff</h2>
+    <h2 class="h2">On all products</h2>
+   </div>
+<div id="div5sub2">
+  <h2 class="h3">USE CODE:</h2>
+  <button class="button1">MYNTRA100</button>
+</div>
+
+
+   <div id="div5sub3">
+    <h2 class="h4">Flat 200% 0ff</h2>
+    <h2 class="h5">On all products</h2>
+   </div>
+<div id="div5sub4">
+  <h2 class="h6">USE CODE:</h2>
+  <button class="button2">MYNTRA200</button>
+</div>
+</div>
+<div id="divmain6">
+    <h2 class="head1">CRAZY</h2>
+    <h2 class="head2">DEALS</h2>
+</div>
+<div id="divmain7">
+<div id="div7sub1">
+    <img src="div7.1.png" alt="">
+    <h2>ETHNIC WEAR</h2>
+    <p>50-80% OFF</p>
+    <h3>SHOP NOW</h3>
+</div>
+<div id="div7sub2">
+    <img src="div7.2.png" alt="">
+    <h2>WFH CASUAL WEAR</h2>
+    <p>40-70% OFF</p>
+    <h3>SHOP NOW</h3>  
+</div>
+<div id="div7sub3">
+    <img src="div7.3.png" alt="">
+    <h2>NORMAL WEAR</h2>
+    <p>50-90% OFF</p>
+    <h3>SHOP NOW</h3>
+</div>
+<div id="div7sub4">
+    <img src="div7.4.png" alt="">
+    <h2>ETHNIC WEAR</h2>
+    <p>50-80% OFF</p>
+    <h3>SHOP NOW</h3> 
+</div>
+<div id="div7sub5">
+    <img src="div7.5.png" alt="">
+    <h2>WFH CASUAL WEAR</h2>
+    <p>40-70% OFF</p>
+    <h3>SHOP NOW</h3>
+</div>
+<div id="div7sub6">
+    <img src="div7.6.png" alt="">
+    <h2>NORMAL WEAR</h2>
+    <p>50-90% OFF</p>
+    <h3>SHOP NOW</h3>
+</div>
+</div>
+<div id="divmain8">
+ <div id="div8sub1">
+    <img src="div8.1.png" alt="">
+    <h2>KIDS WEAR</h2>
+    <p>50-70% OFF</p>
+    <h3>SHOP NOW</h3>
+ </div>
+ <div id="div8sub2">
+    <img src="div8.2.png" alt="">
+    <h2>FOOTWEAR</h2>
+    <p>50-70% OFF</p>
+    <h3>SHOP NOW</h3>
+ </div>
+ <div id="div8sub3">
+    <img src="div8.3.png" alt="">
+    <h2>FOOTWEAR</h2>
+    <p>40-80% OFF</p>
+    <h3>SHOP NOW</h3>
+ </div>
+ <div id="div8sub4">
+    <img src="div8.4.png" alt="">
+    <h2>BAGS AND BELTS</h2>
+    <p>40-70% OFF</p>
+    <h3></h3>
+ </div>
+ <div id="div8sub5">
+    <img src="div8.5.png" alt="">
+    <h2>OFFICE WEAR</h2>
+    <p>40-70% OFF</p>
+    <h3>SHOP NOW</h3>
+ </div>
+ <div id="div8sub6">
+    <img src="div8.6.png" alt="">
+    <h2>ETHNIC WEAR</h2>
+    <p>60% OFF</p>
+    <h3>SHOP NOW</h3>
+ </div>
+</div>
+<div id="divmain7">
+    <div id="div7sub1">
+        <img src="div7.1.png" alt="">
+        <h2>ETHNIC WEAR</h2>
+        <p>50-80% OFF</p>
+        <h3>SHOP NOW</h3>
+    </div>
+    <div id="div7sub2">
+        <img src="div7.2.png" alt="">
+        <h2>WFH CASUAL WEAR</h2>
+        <p>40-70% OFF</p>
+        <h3>SHOP NOW</h3>  
+    </div>
+    <div id="div7sub3">
+        <img src="div7.3.png" alt="">
+        <h2>NORMAL WEAR</h2>
+        <p>50-90% OFF</p>
+        <h3>SHOP NOW</h3>
+    </div>
+    <div id="div7sub4">
+        <img src="div7.4.png" alt="">
+        <h2>ETHNIC WEAR</h2>
+        <p>50-80% OFF</p>
+        <h3>SHOP NOW</h3> 
+    </div>
+    <div id="div7sub5">
+        <img src="div7.5.png" alt="">
+        <h2>WFH CASUAL WEAR</h2>
+        <p>40-70% OFF</p>
+        <h3>SHOP NOW</h3>
+    </div>
+    <div id="div7sub6">
+        <img src="div7.6.png" alt="">
+        <h2>NORMAL WEAR</h2>
+        <p>50-90% OFF</p>
+        <h3>SHOP NOW</h3>
+    </div>
+    </div>
+    <div id="divmain7">
+        <div id="div7sub1">
+            <img src="div9.1.png" alt="">
+            <h2>HOME DECOR</h2>
+            <p>50-80% OFF</p>
+            <h3>SHOP NOW</h3>
+        </div>
+        <div id="div7sub2">
+            <img src="div9.2.png" alt="">
+            <h2>HAND BAGS</h2>
+            <p>40-70% OFF</p>
+            <h3>SHOP NOW</h3>  
+        </div>
+        <div id="div7sub3">
+            <img src="div9.3.png" alt="">
+            <h2>SPEAKERS</h2>
+            <p>50-90% OFF</p>
+            <h3>SHOP NOW</h3>
+        </div>
+        <div id="div7sub4">
+            <img src="div9.4.png" alt="">
+            <h2>JWELLERY</h2>
+            <p>50-80% OFF</p>
+            <h3>SHOP NOW</h3> 
+        </div>
+        <div id="div7sub5">
+            <img src="div9.5.png" alt="">
+            <h2>SIZE EXCLUSIVE</h2>
+            <p>40-70% OFF</p>
+            <h3>SHOP NOW</h3>
+        </div>
+        <div id="div7sub6">
+            <img src="div9.6.png" alt="">
+            <h2>SIZE EXCLUSIVE</h2>
+            <p>50-90% OFF</p>
+            <h3>SHOP NOW</h3>
+        </div>
+        </div>
+</div>
+<article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem cupiditate omnis fugit cum ullam earum quisquam, optio quae reprehenderit vero esse beatae laudantium quis nostrum ipsa repudiandae aperiam architecto nesciunt! Perspiciatis porro dolore incidunt fugiat ipsum voluptas fugit earum modi! Aliquid, autem sed sit eaque explicabo ea, consequuntur at ut nostrum velit quidem fugit fugiat! Iure aliquam tempora distinctio voluptatum ea placeat veritatis iste error amet? Odit porro tempore rerum qui quisquam, sed, possimus repudiandae obcaecati inventore sunt, dicta perspiciatis consectetur accusamus dolorem minus aliquid aut esse ipsam modi sint ab nobis temporibus. Iste nam praesentium sint optio, delectus voluptas architecto temporibus quis magni quos ducimus nihil illum porro ratione voluptatum saepe recusandae veniam incidunt repellat? Ipsam fugit similique excepturi magnam soluta ipsum cum impedit est voluptate, vel perferendis esse dicta! Necessitatibus omnis pariatur ab harum quos soluta blanditiis nesciunt assumenda provident cupiditate nihil distinctio similique totam amet sit a aut asperiores beatae, temporibus nemo animi voluptatibus! Voluptatibus mollitia doloribus praesentium quo voluptatem, ipsa minus eligendi. Veniam eius rem nam consequatur exercitationem minus iste vel fugiat a, ducimus neque facere accusantium magni ab, quam dicta magnam perspiciatis blanditiis modi consequuntur? Corporis deleniti sed eius accusamus ipsum, exercitationem hic optio! Dignissimos enim omnis iure pariatur expedita, aspernatur officia deleniti ab natus, rem fugit unde vitae inventore itaque nihil culpa vero harum sunt maiores corrupti placeat rerum illo consequuntur. Dolore fugiat consequuntur voluptatum a dolorem, velit laboriosam sapiente magni doloribus architecto beatae ducimus ipsum, minima quo error. Et cupiditate fuga quis iusto, veniam provident maiores ut quasi doloribus facere, temporibus consequuntur assumenda! Provident ab esse magnam amet veniam ad saepe tempora enim dolor tempore, sint praesentium nobis dicta id dignissimos? Numquam, sapiente tenetur! Quaerat odit itaque provident deserunt, tempore iusto quae soluta laudantium amet voluptate dolor sit libero unde repellendus pariatur et. Corrupti magnam numquam laboriosam tempore eos suscipit labore exercitationem nemo maxime voluptatem error aperiam, itaque reprehenderit. Cupiditate quos possimus soluta eligendi aliquid ullam, voluptatum praesentium tempora, cumque optio doloremque placeat dolorem asperiores inventore perspiciatis aliquam delectus? Quo qui quod explicabo saepe tenetur voluptatem porro ipsam illum amet quia? Sed consectetur voluptas porro qui ullam distinctio aliquam? Laudantium maiores possimus incidunt id earum similique neque rem totam delectus accusamus animi, voluptatum quae error magnam recusandae ut, repellendus cumque. Aliquam nesciunt ad et deserunt ipsum impedit ducimus nostrum doloremque optio omnis. Ipsam recusandae quibusdam enim error est esse nihil in neque voluptas veniam ut magni, aspernatur earum nobis natus alias? Accusantium corporis omnis quaerat eum eaque fugit excepturi odio dicta, magnam sed? Eveniet aliquam id quasi veniam dolorem praesentium assumenda voluptatem magnam in repellat illo, voluptatibus adipisci facilis earum libero odit, aperiam animi sit molestias sunt ea autem obcaecati quod asperiores. Deserunt magni facilis aut odio, et numquam a quisquam itaque eligendi laborum ipsum porro dignissimos officiis expedita libero doloremque repellendus alias adipisci. Rerum aut aspernatur quos itaque ducimus ullam voluptates sit quasi nisi tempora. Incidunt magni pariatur blanditiis rem nemo repellendus eligendi molestias animi harum sit obcaecati nam quam et, mollitia officiis officia dicta dolorum! Quos odit iste deserunt quam ad, animi corrupti quae mollitia! Quisquam architecto pariatur ut non quis adipisci a laudantium delectus nam consequuntur, expedita, ducimus, explicabo est fugit odit laborum molestias ipsa magnam repudiandae repellendus velit. Nihil rerum debitis ipsam voluptates! Temporibus, est nobis illo qui debitis natus! Nobis illum molestiae quia obcaecati laudantium commodi ipsam temporibus quis odio culpa amet sunt blanditiis exercitationem accusamus vero delectus, atque, optio tempora dignissimos laborum? Perferendis ipsam saepe laboriosam doloremque minus voluptatibus sapiente sint. Deleniti, ratione illum veniam incidunt provident quae quisquam, dolore in et a illo tenetur, iste repellat! Quaerat, culpa quam perferendis illo nostrum nam autem minima in modi ratione vel tempore architecto impedit voluptates possimus neque dolor assumenda sint? Dicta voluptatem quidem rerum reprehenderit corporis iure aperiam cupiditate! Laborum quibusdam, itaque soluta, atque sint fugit, fugiat incidunt deleniti eveniet mollitia amet vitae? Soluta dolor tenetur consequuntur laudantium aliquam magnam reprehenderit aliquid, molestiae dignissimos reiciendis ea temporibus culpa incidunt eum veniam. Consequatur assumenda asperiores, consequuntur dolores earum voluptas natus accusantium magni in expedita, ipsa cumque ipsam voluptatibus unde minima mollitia aliquam explicabo ab a vel esse ratione numquam corrupti? Doloremque totam ullam veniam, reiciendis enim aut magnam quidem, distinctio deleniti sapiente excepturi molestias, omnis odio. Nostrum amet provident tenetur excepturi labore eius. A labore ratione, quas illo eos qui dignissimos iste molestiae tempore distinctio magni est corrupti deserunt velit excepturi. Odit dignissimos reiciendis illo sunt dolor consequuntur ab delectus repellat, tempora pariatur minima atque dolore eligendi animi numquam. Ipsam reprehenderit corporis nisi libero error unde rerum atque quasi. Velit sit eum mollitia nesciunt itaque, corporis quisquam a dignissimos odio maxime repellat illo quam libero aliquam molestiae ab. Consequuntur quasi tempore, laborum consequatur asperiores ipsa repudiandae minus quia similique delectus culpa quos sit, non harum dolores recusandae perspiciatis commodi exercitationem molestiae doloribus sapiente repellendus quo totam! Velit debitis ipsam vel modi dignissimos neque molestias voluptatibus. Sequi iure architecto consequatur veniam tempore voluptatibus fugiat ducimus exercitationem, accusantium commodi ut, id eaque ab hic ratione! Quo dolorem ex voluptate tempora debitis ullam, laboriosam laborum recusandae sint, exercitationem modi porro praesentium vitae dolores aliquid fugit laudantium et maxime ea culpa? Eos pariatur id rem sunt sint dolorum, qui delectus, deleniti facere similique autem non porro praesentium adipisci consequatur cum? Deserunt inventore fugit rerum nemo soluta adipisci, eaque alias hic, eos ratione libero delectus atque? Incidunt cumque ad harum iste, nisi optio labore quisquam quasi architecto modi sequi quaerat et excepturi, molestiae temporibus? Iste architecto id quod sunt molestias debitis eveniet distinctio cum. Iste modi quas ipsum placeat aliquid, voluptates quia eveniet amet earum voluptatum, animi expedita. Autem, ipsum? Sit sapiente fuga, repudiandae atque voluptates facilis qui laudantium iusto vitae fugit nam quasi sunt, itaque esse maxime! Minus aliquam officia illum, cumque unde ipsa amet ex voluptatem voluptatibus laborum ullam rem reiciendis cum optio ipsam, nemo delectus. Adipisci excepturi magnam sapiente eaque neque, explicabo animi iste dolor aspernatur, ad dignissimos ducimus blanditiis porro eius, ipsa itaque! Excepturi cum inventore nihil placeat laborum.</article>
+
+</body>
+</html>
