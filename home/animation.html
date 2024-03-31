@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divmain{
+            width: 100%;
+            height: 970px;
+            box-sizing: border-box;
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            border: 4px solid transparent;
+            border-bottom: 4px solid yellowgreen;
+            border-top:4px solid pink;
+            border-radius: 50%;
+            animation-name:animation1 ;
+            animation-duration: 6s;
+            animation-iteration-count:infinite ;
+            animation-timing-function: linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes animation1 {
+           from{
+            transform: rotate(0deg);
+           } 
+           to{
+            transform: rotate(360deg);
+           }
+        }
+        .container1{
+            height: 150px;
+            width: 150px;
+            border: 4px solid transparent;
+            border-bottom: 4px solid blue;
+            border-top:4px solid violet;
+            border-radius: 50%;
+            animation-name:animation2 ;
+            animation-duration: 3s;
+            animation-iteration-count:infinite ;
+            animation-timing-function: linear;
+            margin: auto;
+        }
+        @keyframes animation2 {
+           from{
+            transform: rotate(0deg);
+           } 
+           to{
+            transform: rotate(-360deg);
+           }
+        }
+    </style>
+</head>
+<body>
+    <div id="divmain">
+        <div class="container">
+            <div class="container1"></div>
+        </div>
+    </div>
+</body>
+</html>
