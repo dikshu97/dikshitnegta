@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body,html{
+        height: 100%;
+        width: 100%;
+      }
+      #divmain1{
+        width: 90%;
+        height: 400px;
+        background-color: aqua;
+        box-sizing: border-box;
+        margin: 5px ;
+        padding: 10px;
+        display: flex;
+      }
+      #div1sub1{
+        width: 50%;
+        height: 390px;
+        background-color: yellow;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 6px;
+      }
+      #div1sub2{
+        width: 50%;
+        height: 390px;
+        background-color:pink;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 6px; 
+      }
+      img{
+        height: 380px;
+        width: 100%;
+      }
+      p{
+        font-family: sans-serif;
+        font-size: 18px;
+      }
+
+      @media (max-width:500px) {
+        #divmain1{
+          width: 70%;
+          height:auto ;
+          display: block;
+        }
+        #div1sub1{
+          width: 100%;
+          margin: 5px 0px;
+          font-size: 15px;
+        }
+        #div1sub2{
+          width: 100%;
+          margin:  0px 5px;
+          height: auto;
+        }
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      @media (max-width:340px) {
+        #divmai1n{
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+        #div1sub1{
+          width: 100%;
+          margin: 5px 0px;
+          height: auto; 
+        }
+        #div1sub1>p{
+          width: 100%;
+          height: 100%;
+          font-size: 15px;
+        }
+        #div1sub2{
+          width: 100%;
+          height: auto;
+        }
+        img{
+          width: 100%;
+          height: auto;
+        }
+
+      }
+    </style>
+</head>
+<body>
+ <div id="divmain1">
+  <div id="div1sub1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolores hic ullam saepe aliquam exercitationem vitae nostrum, eligendi porro quis, fugit possimus, praesentium dicta quo? Aliquam, eum eveniet. Ad iure delectus iste quae vitae. Accusantium, sed veniam rem, necessitatibus, ea aspernatur quae unde odit itaque ex distinctio. Doloribus, quam exercitationem!</p>
+  </div>
+  <div id="div1sub2">
+    <img src="div4.2.png" alt="">
+  </div>
+
+ </div>
+</body>
+</html>

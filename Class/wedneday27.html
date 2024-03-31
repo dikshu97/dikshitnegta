@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divmain1{
+            width: 80%;
+            background-color: yellow;
+            height: 610px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            /* gap: 20px; */
+        }
+        #div1sub1{
+            width: 30%;
+            height: 600px;
+            margin: 15px;
+            padding:10px ;
+            box-sizing: border-box;
+            background-color: pink;
+        }
+        #div1sub2{
+            width: 50%;
+            height: 586px;
+            margin: 15px;
+            padding:10px ;
+            box-sizing: border-box;
+            background-color: blue;
+        }
+        #div1sub2 img{
+            height: 100%;
+            width: 100%;
+        }
+        @media (max-width:768px)  {
+       #divmain1{
+          display: block;
+        }
+        #div1sub1>h1{
+            color: red;
+            font-size: 25px;
+            font-family: sans-serif;
+        }
+        #div1sub2 img{
+            width:50% ;
+            height: 50%;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="divmain1"> 
+        <div id="div1sub1">
+            <h1>Hello</h1>
+        </div>
+        <div id="div1sub2">
+            <img src="div4.2.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
