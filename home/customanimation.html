@@ -29,7 +29,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 7px solid whitesmoke;
+            border: 7px solid aliceblue;
             border-radius: 15px;
             font-size: 50px;
             position: relative;
@@ -63,10 +63,10 @@
      
        .d::before{
         content: "";
-        animation-duration: 1.5s;
+        animation-duration: 1s;
         animation-name: d ;
         animation-timing-function: linear;
-        animation-delay: 1s;
+        animation-delay: 0s;
         animation-fill-mode:forwards ;
         animation-iteration-count:1;
        }
@@ -92,19 +92,19 @@
        }
        .i::before{
         content: "";
-        animation-duration: 3.5s;
+        animation-duration: 1s;
         animation-name:i ;
         animation-timing-function: linear;
         animation-delay: 1s;
         animation-fill-mode:forwards ;
-        animation-iteration-count:1;
+        animation-iteration-count:1.2;
        }
        @keyframes i {
         0%{
             content: "g";
         }
         20%{
-            content: "p";
+            content: "I";
         }
         40%{
             content: "r";
@@ -121,10 +121,10 @@
        }
        .k::before{
         content: "";
-        animation-duration: 5.5s;
+        animation-duration: 1s;
         animation-name:k ;
         animation-timing-function: linear;
-        animation-delay: 1s;
+        animation-delay: 2.4s;
         animation-fill-mode:forwards ;
         animation-iteration-count:1;
        }
@@ -150,10 +150,10 @@
        }
        .s::before{
         content: "";
-        animation-duration: 7.5s;
+        animation-duration: 1s;
         animation-name:s ;
         animation-timing-function: linear;
-        animation-delay: 1s;
+        animation-delay: 3.6s;
         animation-fill-mode:forwards ;
         animation-iteration-count:1;
        }
@@ -179,10 +179,10 @@
        }
        .h::before{
         content: "";
-        animation-duration: 10s;
+        animation-duration: 1s;
         animation-name:h ;
         animation-timing-function: linear;
-        animation-delay: 1s;
+        animation-delay: 4.8s;
         animation-fill-mode:forwards ;
         animation-iteration-count:1;
        }
@@ -208,10 +208,10 @@
        }
        .i2::before{
         content: "";
-        animation-duration: 12.5s;
+        animation-duration: 1s;
         animation-name:i2 ;
         animation-timing-function: linear;
-        animation-delay: 1s;
+        animation-delay: 6s;
         animation-fill-mode:forwards ;
         animation-iteration-count:1;
        }
@@ -237,10 +237,10 @@
        }
        .t::before{
         content: "";
-        animation-duration: 14s;
+        animation-duration: 1s;
         animation-name:t;
         animation-timing-function: linear;
-        animation-delay: 1s;
+        animation-delay: 7.2s;
         animation-fill-mode:forwards ;
         animation-iteration-count:1;
        }
@@ -287,7 +287,59 @@
             transform: rotate(-360deg);
         }
        }
-       
+       .div1{
+        height:110px ;
+        width: 110px;
+        /* background-color: yellow; */
+        position: absolute;
+        top: -132.5px;
+        left: -30px;
+        border-radius: 50%;
+        border-bottom: 8px solid red;
+        border-top: 8px solid yellow;
+        /* border: 5px solid blue; */
+        animation-duration: 10s;
+        animation-name:div1 ;
+        animation-timing-function: linear;
+        animation-iteration-count:infinite ;
+       }
+       @keyframes div1 {
+        from{
+            transform: rotate(0deg);
+            transform: translateX(00px);
+        }
+        to{
+            transform: rotate(360deg);
+            transform: translateX(670px);  
+        }
+       }
+       .div2{
+        height:110px ;
+        width: 110px;
+        /* background-color: yellow; */
+        position: absolute;
+        bottom: -132.5px;
+        right: -30px;
+        border-radius: 50%;
+        border-bottom: 8px solid pink;
+        border-top: 8px solid greenyellow;
+        /* border: 5px solid blue; */
+        animation-duration: 10s;
+        animation-name:div2 ;
+        animation-timing-function: linear;
+        animation-iteration-count:infinite ;
+       }
+       @keyframes div2 {
+        from{
+            transform: rotate(0deg);
+            transform: translateX(00px);
+        }
+        to{
+            transform: rotate(360deg);
+            transform: translateX(-670px);  
+        }
+       }
+
 
     </style>
 </head>
@@ -303,6 +355,8 @@
         <h1 class="i2"></h1>
         <h1  class="t"></h1>
          <p id="pp"></p>
+         <div class="div1"></div>
+         <div class="div2"></div>
     </div>
  </div>   
 </body>
