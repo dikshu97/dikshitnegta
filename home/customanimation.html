@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            font-family: sans-serif;
+        
+        }
+        .container{
+            width: 100%;
+            height: 700px;
+          background-image: linear-gradient(to bottom ,deepskyblue 40%,black );
+          box-sizing: border-box;
+          margin: 0px;
+          padding: 10px;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+        }
+        .container1{
+            width:30% ;
+            height: 15%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 7px solid whitesmoke;
+            border-radius: 15px;
+            
+        }
+        a{
+            color: aliceblue;
+            text-decoration:none;
+            font-family: sans-serif;
+            font-size: 100px;
+        }
+       .d::before{
+        content: "";
+        animation-duration: 4;
+        animation-name:d ;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-fill-mode:forwards ;
+        animation-iteration-count:1;
+       }
+       @keyframes d {
+        0%{
+            content: "l";
+        }
+        20%{
+            content: "k";
+        }
+        40%{
+            content: "o";
+        }
+        60%{
+            content: "m";
+        }
+        80%{
+            content: "g";
+        }
+        100%{
+            content: "D";
+        }
+       }
+       .i::before{
+        content: "";
+        animation-duration: 4;
+        animation-name:i ;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-fill-mode:forwards ;
+        animation-iteration-count:1;
+       }
+       @keyframes i {
+        0%{
+            content: "g";
+        }
+        20%{
+            content: "p";
+        }
+        40%{
+            content: "r";
+        }
+        60%{
+            content: "s";
+        }
+        80%{
+            content: "t";
+        }
+        100%{
+            content: "I";
+        }
+       }
+       .k::before{
+        content: "";
+        animation-duration: 4;
+        animation-name:k ;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-fill-mode:forwards ;
+        animation-iteration-count:1;
+       }
+       @keyframes k {
+        0%{
+            content: "o";
+        }
+        20%{
+            content: "m";
+        }
+        40%{
+            content: "j";
+        }
+        60%{
+            content: "u";
+        }
+        80%{
+            content: "y";
+        }
+        100%{
+            content: "K";
+        }
+       }
+
+    </style>
+</head>
+<body>
+ <div class="container">
+    <div class="container1">
+        <a class="d" href=""></a>
+        <a class="i" href=""></a>  
+        <a class="k" href=""></a>
+        <a class="s" href=""></a>
+        <a class="h" href=""></a>
+        <a class="i" href=""></a>
+        <a class="t" href=""></a>
+      
+    </div>
+ </div>   
+</body>
+</html>
