@@ -23,24 +23,24 @@
           align-items: center;
         }
         .container1{
-            width:45% ;
+            width:53% ;
             height: 25%;
             background-color: black;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
             border: 7px solid whitesmoke;
             border-radius: 15px;
             font-size: 50px;
             position: relative;
-            padding-right: 30px;
+            /* padding-right: 30px; */
         }
-        p{
+        .p{
             height:130px ;
             width:130px ;
             /* background-color: yellow; */
             position: absolute;
-            left: 10px;
+            left: 0px;
             border-radius: 50%;
             border: 5px solid transparent;
             border-bottom: 5px solid blue;
@@ -50,6 +50,7 @@
             animation-timing-function:linear ;
             animation-iteration-count: infinite;
             margin-left: 20px;
+          
         }
         @keyframes p {
            from{
@@ -263,6 +264,29 @@
             content: "T";
         }
        }
+       #pp{
+        width: 130px;
+        height: 130px;
+        /* background-color: yellow; */
+        position: absolute;
+        right: 15px;
+        border: 5px solid transparent;
+        border-bottom: 5px solid violet;
+        border-top: 5px solid pink;
+        border-radius: 50%;
+        animation-duration:5s ;
+        animation-name:pp ;
+        animation-timing-function:linear ;
+    animation-iteration-count: infinite;
+       }
+       @keyframes pp {
+        from{
+            transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(-360deg);
+        }
+       }
        
 
     </style>
@@ -270,7 +294,7 @@
 <body>
  <div class="container">
     <div class="container1">
-        <p></p>
+        <p class="p"></p>
         <h1 class="d" ></h1> 
         <h1 class="i"></h1>  
         <h1 class="k"></h1> 
@@ -278,7 +302,7 @@
         <h1 class="h"></h1>
         <h1 class="i2"></h1>
         <h1  class="t"></h1>
-      
+         <p id="pp"></p>
     </div>
  </div>   
 </body>
