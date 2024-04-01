@@ -9,11 +9,11 @@
             width: 100%;
             height: 100%;
             font-family: sans-serif;
-        
+            color: whitesmoke;
         }
         .container{
             width: 100%;
-            height: 700px;
+            height: 650px;
           background-image: linear-gradient(to bottom ,deepskyblue 40%,black );
           box-sizing: border-box;
           margin: 0px;
@@ -23,28 +23,49 @@
           align-items: center;
         }
         .container1{
-            width:30% ;
-            height: 15%;
+            width:45% ;
+            height: 25%;
             background-color: black;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
             border: 7px solid whitesmoke;
             border-radius: 15px;
-            
+            font-size: 50px;
+            position: relative;
+            padding-right: 30px;
         }
-        a{
-            color: aliceblue;
-            text-decoration:none;
-            font-family: sans-serif;
-            font-size: 100px;
+        p{
+            height:130px ;
+            width:130px ;
+            /* background-color: yellow; */
+            position: absolute;
+            left: 10px;
+            border-radius: 50%;
+            border: 5px solid transparent;
+            border-bottom: 5px solid blue;
+            border-top: 5px solid coral;
+            animation-duration: 5s;
+            animation-name:p ;
+            animation-timing-function:linear ;
+            animation-iteration-count: infinite;
+            margin-left: 20px;
         }
+        @keyframes p {
+           from{
+            transform: rotate(0deg);
+           } 
+           to{
+            transform: rotate(360deg);
+           }
+        }
+     
        .d::before{
         content: "";
-        animation-duration: 4;
-        animation-name:d ;
+        animation-duration: 1.5s;
+        animation-name: d ;
         animation-timing-function: linear;
-        animation-delay: 2s;
+        animation-delay: 1s;
         animation-fill-mode:forwards ;
         animation-iteration-count:1;
        }
@@ -70,10 +91,10 @@
        }
        .i::before{
         content: "";
-        animation-duration: 4;
+        animation-duration: 3.5s;
         animation-name:i ;
         animation-timing-function: linear;
-        animation-delay: 2s;
+        animation-delay: 1s;
         animation-fill-mode:forwards ;
         animation-iteration-count:1;
        }
@@ -99,10 +120,10 @@
        }
        .k::before{
         content: "";
-        animation-duration: 4;
+        animation-duration: 5.5s;
         animation-name:k ;
         animation-timing-function: linear;
-        animation-delay: 2s;
+        animation-delay: 1s;
         animation-fill-mode:forwards ;
         animation-iteration-count:1;
        }
@@ -126,19 +147,137 @@
             content: "K";
         }
        }
+       .s::before{
+        content: "";
+        animation-duration: 7.5s;
+        animation-name:s ;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-fill-mode:forwards ;
+        animation-iteration-count:1;
+       }
+       @keyframes s {
+        0%{
+            content: "e";
+        }
+        20%{
+            content: "l";
+        }
+        40%{
+            content: "k";
+        }
+        60%{
+            content: "t";
+        }
+        80%{
+            content: "y";
+        }
+        100%{
+            content: "S";
+        }
+       }
+       .h::before{
+        content: "";
+        animation-duration: 10s;
+        animation-name:h ;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-fill-mode:forwards ;
+        animation-iteration-count:1;
+       }
+       @keyframes h {
+        0%{
+            content: "r";
+        }
+        20%{
+            content: "p";
+        }
+        40%{
+            content: "o";
+        }
+        60%{
+            content: "i";
+        }
+        80%{
+            content: "j";
+        }
+        100%{
+            content: "H";
+        }
+       }
+       .i2::before{
+        content: "";
+        animation-duration: 12.5s;
+        animation-name:i2 ;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-fill-mode:forwards ;
+        animation-iteration-count:1;
+       }
+       @keyframes i2 {
+        0%{
+            content: "d";
+        }
+        20%{
+            content: "l";
+        }
+        40%{
+            content: "j";
+        }
+        60%{
+            content: "h";
+        }
+        80%{
+            content: "f";
+        }
+        100%{
+            content: "I";
+        }
+       }
+       .t::before{
+        content: "";
+        animation-duration: 14s;
+        animation-name:t;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-fill-mode:forwards ;
+        animation-iteration-count:1;
+       }
+       @keyframes t {
+        0%{
+            content: "u";
+        }
+        20%{
+            content: "y";
+        }
+        40%{
+            content: "s";
+        }
+        60%{
+            content: "d";
+        }
+        80%{
+            content: "e";
+        }
+        100%{
+            content: "T";
+        }
+       }
+       
 
     </style>
 </head>
 <body>
  <div class="container">
     <div class="container1">
-        <a class="d" href=""></a>
-        <a class="i" href=""></a>  
-        <a class="k" href=""></a>
-        <a class="s" href=""></a>
-        <a class="h" href=""></a>
-        <a class="i" href=""></a>
-        <a class="t" href=""></a>
+        <p></p>
+        <h1 class="d" ></h1> 
+        <h1 class="i"></h1>  
+        <h1 class="k"></h1> 
+        <h1 class="s"></h1> 
+        <h1 class="h"></h1>
+        <h1 class="i2"></h1>
+        <h1  class="t"></h1>
       
     </div>
  </div>   
