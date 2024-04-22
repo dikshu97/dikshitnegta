@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+    *{
+        box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+    }
+    #mainbody{
+        width: 100%;
+     
+    }
+    .maindiv{
+        height: 50px;
+        width: 100%;
+        background-color:white;
+         display: flex;
+         justify-content:start;
+         align-items: center;
+         gap: 30px;
+         font-family: sans-serif;
+         font-style: normal;
+         font-size: 15px;
+        padding-left:10px ;
+        box-shadow: -7px 8px 20px 0px #000000
+}
+        
+    
+    a{
+        text-decoration: none;
+        color: black;
+        position: relative;
+        
+    }
+    a:hover{
+        font-weight: bold;
+    }
+    a::after{
+        content:"";
+        display: block;
+        background-color:transparent;
+        height: 3px;
+        width: 100%;
+        transition: 3s;
+        position: absolute;
+        bottom: -13px;
+    }
+    a:hover::after{
+        background-color: red;
+    }
+    input{
+        height: 25px;
+        width: 450px;
+       border-top-left-radius: 5px;
+       border-bottom-left-radius: 5px;
+       outline: none;
+       padding-left: 30px;
+       color: rgb(173, 170, 170);
+    }
+    span{
+        height: 25px;
+        width: 25px;
+        border: 2px solid black;
+        padding: auto;
+        font-size: 18px;
+        padding-top: 3px;
+        margin-left: -30px;
+        padding-left: 2px;
+        color: grey;
+       border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+
+    }
+    img{
+        height: 50px;
+    }
+    .maindiv1{
+        height: 600px;
+        width: 100%;
+        background-image:url(papa.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backface-visibility: visible;
+        background-origin: border-box;
+        margin-top: 5px;
+        
+    }
+    /* .img1{
+        height: 600px;
+        width: 100%;
+    } */
+    
+    
+    </style>
+</head>
+<body>
+    <div id="mainbody">
+    <div  class="maindiv">
+        <img src="MOC LOGO.png" alt="">
+        <a href="">Home </a>
+        <a href="">Organisation </a>
+        <a href="">Contact </a>
+        <a href="">Products </a>
+        <a href="">Services </a>
+        <a href="">Communications </a>
+        <a href="">Profile </a>
+
+        <input type="text" name="Search here" placeholder="Search here" >
+        <span><i class='bx bx-search'></i></span>
+        </div>
+        <div class="maindiv1">
+        <img class="img1" src="papa.jpg" alt="">
+        </div>
+</div>
+  
+</body>
+</html>
