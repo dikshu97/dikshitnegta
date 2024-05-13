@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+    table{
+        width: 90%;
+        margin: 50px auto;
+      color: whitesmoke;  
+      font-size: 18px;
+     
+    }
+    th{
+        border: none;
+    }
+    .th{
+        height: 30px;
+        font-weight: bolder;
+        color: red;
+    }
+    button{
+        background-color: black;
+        color: whitesmoke;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin:10px auto;
+        padding: 10px;
+        border-radius: 20px;
+        border: 3px solid deepskyblue;
+       
+    }
+    table{
+        display: none;
+       
+    }
+    button:hover table{
+        display: inline-block;
+        
+        /* color: deepskyblue;
+        font-weight: bold; */
+    }
+    
+
+    .chutku{
+        color:blue;
+        position: relative;
+    }
+    .chutku::after{
+        content: "";
+        display: block;
+        background-color:transparent;
+        height: 3px;
+        width:100% ;
+        transition: 1s;
+        position: absolute;
+        top:20px
+    }
+    .chutku:hover:after{
+background-color: red;
+    }
+
+    .subtable1{
+      display: none;
+    }
+    .chutku:hover .subtable1{
+        display: block;
+        color: deepskyblue;
+        padding: 5px;
+    }
+
+    
+    .kb{
+        color:blue;
+        position: relative;
+    }
+    .kb::after{
+        content: "";
+        display: block;
+        background-color:transparent;
+        height: 3px;
+        width:100% ;
+        transition: 1s;
+        position: absolute;
+        top:20px
+    }
+    .kb:hover:after{
+background-color: red;
+    }
+
+    .subtable2{
+      display: none;
+    }
+    .kb:hover:hover .subtable2{
+        display: block;
+        color: deepskyblue;
+        padding: 5px;
+    }
+    .thh{
+        color: red;
+        text-align: center;
+    }
+
+    @media(min-width="")  {
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <button>Click me
+            <table border="1px" >
+                <th>
+                    <tr class="th">
+                        <td>Date</td>
+                        <td>Expenses</td>
+                        <td>Amount</td>
+                        <td>Details</td>
+                    </tr>
+                </th>
+                <tbody>
+                    <tr>
+                        <td>3/5/2024</td>
+                        <td>Fees</td>
+                        <td>6000</td>
+                        <td>fees paid for dice institute</td>
+                    </tr>
+                    <tr>
+                        <td>6/5/2024</td>
+                        <td>Laptop stand</td>
+                        <td>450</td>
+                        <td>Laptop stand for the Laptop</td>
+                    </tr>
+                    <tr>
+                        <td>5/5/2024</td>
+                        <td>Vegetables</td>
+                        <td>250</td>
+                        <td>vegatables brought</td>
+                    </tr>
+                    <tr>
+                        <td>5/5/2024</td>
+                        <td>Fruits</td>
+                        <td>300</td>
+                        <td>Fruits brought</td>
+                    </tr>
+                    <tr>
+                        <td>5/5/2024</td>
+                        <td>Milk/Dahi</td>
+                        <td>126</td>
+                        <td>Milk and dahi brought</td>
+                    </tr>
+                    <tr>
+                        <td>4/5/2024</td>
+                        <td>Metro </td>
+                        <td>200</td>
+                        <td>matro recharge</td>
+                    </tr>
+                    <tr>
+                        <td>4/5/2024</td>
+                        <td>Mac'd</td>
+                        <td>302</td>
+                        <td>food </td>
+                    </tr>
+                    <tr>
+                        <td>3/5/2024</td>
+                        <td>Milk/Dahi</td>
+                        <td>192</td>
+                        <td>Toned and Full cream milk/Dahi</td>
+                    </tr>
+                    <tr>
+                        <td>3/5/2024</td>
+                        <td>Stationary</td>
+                        <td>50</td>
+                        <td>Stationary brought</td>
+                    </tr>
+                    <tr>
+                        <td>7/5/2024</td>
+                        <td>Electricity Bill </td>
+                        <td>400</td>
+                        <td>bill paid</td>
+                    </tr>
+                    <tr>
+                        <td>7/5/2024</td>
+                        <td>Gas bill</td>
+                        <td>1200</td>
+                        <td>Gas billl paid</td>
+                    </tr>
+                    <tr>
+                        <td>7/5/2024</td>
+                        <td>Milk</td>
+                        <td>54</td>
+                        <td>milk brought</td>
+                    </tr>
+                    <tr>
+                        <td>7/5/2024</td>
+                        <td>Pooja Products</td>
+                        <td>40</td>
+                        <td>pooja Products</td>
+                    </tr>
+                    <tr>
+                        <td>7/5/2024</td>
+                        <td>Sweets</td>
+                        <td>100</td>
+                        <td>Sweets brought</td>
+                    </tr>
+                    <tr>
+                        <td>7/5/2024</td>
+                        <td>Veegetables</td>
+                        <td>100</td>
+                        <td>vegetables brought</td>
+                    </tr>
+                    <tr>
+                        <td>8/5/2024</td>
+                        <td>Metro recharge</td>
+                        <td>200</td>
+                        <td>Metro recharge for class</td>
+                    </tr>
+                    <tr>
+                        <td>8/5/2024</td>
+                        <td>Neet PG FORM</td>
+                        <td>3500</td>
+                        <td>form</td>
+                    </tr>
+
+                    <tr>
+                        <td>8/5/2024</td>
+                        <td>Milk/Dahi</td>
+                        <td>100</td>
+                        <td>Milk and dahi for home</td>
+                    </tr>
+                    <tr>
+                        <td>8/5/2024</td>
+                        <td>Momos</td>
+                        <td>60</td>
+                        <td>Momos for tannu</td>
+                    </tr>
+                    <tr>
+                        <td>9/5/2024</td>
+                        <td>Paneer</td>
+                        <td>150</td>
+                        
+                        <td>Paneer</td>
+                    </tr>
+                    <tr>
+                        <td>9/5/2024</td>
+                        <td>fruits/vegetables</td>
+                        <td>400</td>
+                        <td>Capsicum,Mango</td>
+                    </tr>
+                    <tr>
+                        <td>10/5/2024</td>
+                        <td>chips and coke</td>
+                        <td>160</td>
+                        <td>chips and coke from gopinath</td>
+                    </tr>
+                    <tr>
+                        <td>10/5/2024</td>
+                        <td>Milk /Dahi</td>
+                        <td>126</td>
+                        <td>From mother dairy</td>
+                    </tr>
+                    <tr>
+                        <td>10/5/2024</td>
+                        <td>Chilly Potato</td>
+                        <td>130</td>
+                        <td>From  sector -3 market</td>
+                    </tr>
+                    <tr>
+                        <td>10/5/2024</td>
+                        <td>Patties</td>
+                        <td>50</td>
+                        <td>from sectro-3 </td>
+                    </tr>
+                    <tr>
+                        <td>11/5/2024</td>
+                        <td>Metro card recharge</td>
+                        <td>500</td>
+                        <td>metro card recharge</td>
+                    </tr>
+                    <tr>
+                        <td>11/5/2024</td>
+                        <td class="chutku">Chutku's Exam
+                            <table border="5px" class="subtable1">
+                                <th >
+                                    <tr class="thh">
+                                        <td>Expenses</td>
+                                        <td>Amount</td>
+                                        <td>Details</td>
+                                    </tr>
+                                </th>
+                                <tbody>
+                                 <tr>
+                                    <td>Metro</td>
+                                    <td>200</td>
+                                    <td>total fare from /to home</td>
+                                    
+                                 </tr>
+                                 <tr>
+                                    <td>Auto</td>
+                                    <td>300</td>
+                                    <td>Total fare</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Chaayos</td>
+                                    <td>600</td>
+                                    <td >while waiting and online class at Chaayos</td>
+                                 </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>1100</td>
+                        <td>Chutku's ipu cet Exam</td>
+                    </tr>
+                    <tr>
+                        <td>12/5/2024</td>
+                        <td>Paneer</td>
+                        <td>150</td>
+                        
+                        <td>Paneer</td>
+                    </tr>
+                    <tr>
+                        <td>13/5/2024</td>
+                        <td class="kb">Kendriye Bhandar
+                            <table border="5px" class="subtable2" >
+                                <th >
+                                    <tr class="thh">
+                                        <td>Expenses</td>
+                                        <td>Amount</td>
+                                        <td>Details</td>
+                                    </tr>
+                                </th>
+                                <tbody>
+                                    <tr>
+                                        <td>Rice</td>
+                                        <td>341</td>
+                                        <td>Basmati Rice 5Kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Soap</td>
+                                        <td>143</td>
+                                        <td>Pair of Soap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sugar</td>
+                                        <td>52</td>
+                                        <td>Sugar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maggi</td>
+                                        <td>55</td>
+                                        <td>Maggi(4 Packet)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Soyabean</td>
+                                        <td>87</td>
+                                        <td>Soyabean 500 grams</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biscuits</td>
+                                        <td>100</td>
+                                        <td>Biscuits</td>
+                                        <tr>
+                                            <td>Moong Dal</td>
+                                            <td>150</td>
+                                            <td>Moong dal 2 packets</td>
+                                        </tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>928</td>
+                        <td>Rashan brought from Kendriya Bhandar</td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+        
+        </button>
+       
+    </div>
+   </body>
+</html>
