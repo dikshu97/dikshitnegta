@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background-color: whitesmoke;
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            width: 100%;
+            height: 70px;
+            background-color:white;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: start;
+            /* flex-wrap: wrap; */
+            font-family: sans-serif;
+            font-size: 17px;
+            color: black;
+            align-items: center;
+            gap: 320px;
+            padding-left: 50px;
+            color: black;
+        }
+        header a{
+            text-decoration: none;
+        }
+        .lastdiv{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 50px;
+        }
+        .middletag{
+         display: flex;
+         justify-content: start;
+         gap: 30px;
+         color: black;
+        }
+        .middletag a{
+            color: black;
+        }
+        .lastdiv a{
+            color: black;
+            font-weight: bold;
+        }
+        .div2{
+            background-color: whitesmoke;
+            height: 35px;
+            width: 80px;
+            text-align: center;
+            font-size: 31px;
+            border-radius: 15px;
+            padding-top: 3px;
+            border: 1px solid black;
+        }
+        .div1 {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+        .div1 span{
+            font-size: 23px;
+        }
+        .headdiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .headdiv a{
+            color:rgb(208, 85, 15);
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .headdiv img{
+            color: red;
+        }
+        .onclickdiv{
+        height: 500px;
+        width: 40%;
+        /* background-color: yellow; */
+        padding: 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 5px;
+        overflow: scroll;
+        
+        }
+        .insidediv1{
+            display: flex;
+            justify-content: start;
+            gap: 30px;
+            margin-left: 0px;
+            /* background-color:wheat; */
+            font-size: 17px;
+            border-bottom: 2px solid grey;
+        }
+        .p1{
+            color: black;
+            position: relative;
+        }
+        .p1::after{
+            content: "";
+            background-color:transparent;
+            display: block;
+            height: 3px;
+            width: 100%;
+            transition: 2s;
+            position: absolute;
+            bottom: -15px;
+        }
+        .p1:hover::after{
+           background-color:black; 
+        }
+        .p2{
+            color: black;
+            position: relative;
+        }
+        .p2::after{
+            content: "";
+            background-color:transparent;
+            display: block;
+            height: 3px;
+            width: 100%;
+            transition: 2s;
+            position: absolute;
+            bottom: -15px;
+        }
+        .p2:hover::after{
+           background-color:black; 
+        }
+        .insidediv2{
+            background-color: rgb(224, 220, 220);
+            height: 60px;
+            border-radius: 10px;
+            text-align: start;
+        }
+        .sujjesteddiv{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 40px;
+        }
+        .languagediv{
+            background-color:whitesmoke;
+            display: flex;
+            justify-content: start;
+            gap: 35px;
+            flex-wrap: wrap;
+            
+        }
+        .language{
+          
+          height: 90px;
+          text-align: center;
+          width: 140px;  
+          border-radius: 15px;
+          transition: 1s;
+        }
+        .language:hover{
+            background-color: rgb(215, 213, 213);
+            border: 1px solid black; 
+        }
+        
+
+       
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <header >
+        <div class="headdiv">
+            <div class="tagname"></div>
+            <img src="airbnblogo.png" alt="" height="40px" width="40px">
+           <a href="https://www.airbnb.co.in/">airbnb</a>
+        </div>
+        <div class="middletag">
+        <a href="">Stays</a>
+        <a href="">Experiences</a>
+        <a href="https://www.airbnb.co.in/s/experiences/online">Online Experiences</a>
+        </div>
+        <div class="lastdiv">
+          <div class="div1"> 
+            <a href="https://www.airbnb.co.in/host/homes">Airbnb your home</a>
+            <span><i class='bx bx-world'></i></span>
+        </div>
+            <div class="div2">
+
+          
+            <span><i class='bx bx-menu' ></i></span>
+            <span><i class='bx bxs-user-circle' ></i></span>
+           </div>
+        </div>
+    
+    
+    </header>
+
+    <!-- <a href="">hello</a> -->
+     <div class="onclickdiv">
+        <div class="insidediv1">
+            <p class="p1">Language and region
+                
+            </p>
+        <p class="p2">Currency</p>
+        </div>
+        <div class="insidelanguage">
+            <div class="insidediv2">
+                <p>Translation</p>
+                
+                <p>Automatically tranlate descriptions and reviews to English</p>
+            </div>
+            <h2>Sujjested languages and regions</h2>
+            <div class="sujjesteddiv">
+               <div>
+                <p>English</p>
+                <p>Unted kingdom</p>
+               </div> 
+               <div>
+                <p>English</p>
+                <p>United States</p>
+               </div>
+               <div>
+                <p>हिंदी</p>
+                <p>भारत</p>
+               </div>
+    
+            </div>
+            <h2>Choose language and region</h2>
+            <div class="languagediv">
+               <div class="language">
+                <p>English</p>
+                <p>India</p>
+               </div> 
+               <div class="language" >
+                <p>Azerbaycan dili</p>
+                <p>Azerbaycan </p>
+               </div>
+               <div class="language">
+                <p>Bahasaya Indonesian</p>
+                <p>Indonesia</p>
+               </div>
+               <div class="language">
+                <p>Bosanki</p>
+                <p>Bosna Hercegovina</p>
+               </div>
+               <div class="language">
+                <p>Catala</p>
+                <p>Espanaya</p>
+               </div>
+               <div class="language">
+                <p>Cestina</p>
+                <p>Ceska republika</p>
+               </div>
+               <div class="language">
+                <p>Bosanki</p>
+                <p>Bosna Hercegovina</p>
+               </div>
+               <div class="language">
+                <p>Dansk</p>
+                <p>Denmark</p>
+               </div>
+               <div class="language">
+                <p>Deutsch</p>
+                <p>Deautschland</p>
+               </div>
+               <div class="language">
+                <p>English</p>
+                <p>Australlia</p>
+               </div>
+               <div class="language">
+                <p>English</p>
+                <p>Canada</p>
+               </div>
+               <div class="language">
+                <p>English</p>
+                <p>Guyana</p>
+               </div>
+               <div class="language"> 
+                <p>English</p>
+                <p>Ireland</p>
+               </div>
+               <div class="language">
+                <p>English</p>
+                <p>New Zealand</p>
+               </div>
+               <div class="language">
+                <p>English</p>
+                <p>Singapore</p>
+               </div>
+               <div class="language">
+                <p>English</p>
+                <p>United Arab Emirates</p>
+               </div>
+               <div class="language">
+                <p>Espanol</p>
+                <p>Argentina</p>
+               </div>
+               <div class="language">
+                <p>Espanol</p>
+                <p>Belice</p>
+               </div>
+               <div class="language">
+                <p>Espanol</p>
+                <p>Bolvia</p>
+               </div>
+               <div class="language">
+                <p>Espanol</p>
+                <p>Chile</p>
+               </div>
+               <div class="language">
+                <p>Espanol</p>
+                <p>EL Salvador</p>
+               </div>
+               <div class="language">
+                <p>Espanol</p>
+                <p>Espana</p>
+               </div>
+               <div class="language">
+                <p>Espanol</p>
+                <p>Estados Unidos</p>
+               </div>
+               <div class="language">
+                <p>Romana</p>
+                <p>Romania</p>
+               </div>
+               <div class="language">
+                <p>Shqip</p>
+                <p>Shqiperi</p>
+               </div>
+               <div class="language">
+                <p>Slovecina</p>
+                <p>Slovensko</p>
+               </div>
+    
+    
+            </div>
+        </div>
+        
+       
+     </div>
+        
+</body>
+</html>

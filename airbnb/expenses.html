@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0044)http://127.0.0.1:5500/expenses/expenses.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
@@ -149,16 +149,16 @@ background-color: red;
 <body>
     <div>
         <button><h3>Click me</h3>
-            <table class="maintable" border="1px" >
-                <th>
-                    <tr class="th">
+            <table class="maintable" border="1px">
+                <tbody><tr><th>
+                    </th></tr><tr class="th">
                         <td>Date</td>
                         <td>Expenses</td>
                         <td>Amount</td>
                         <td>Details</td>
                     </tr>
-                </th>
-                <tbody>
+                
+                </tbody><tbody>
                     <tr>
                         <td>3/5/2024</td>
                         <td>Fees</td>
@@ -340,14 +340,14 @@ background-color: red;
                         <td>11/5/2024</td>
                         <td class="chutku">Chutku's Exam
                             <table border="5px" class="subtable1">
-                                <th >
-                                    <tr class="thh">
+                                <tbody><tr><th>
+                                    </th></tr><tr class="thh">
                                         <td>Expenses</td>
                                         <td>Amount</td>
                                         <td>Details</td>
                                     </tr>
-                                </th>
-                                <tbody>
+                                
+                                </tbody><tbody>
                                  <tr>
                                     <td>Metro</td>
                                     <td>₹200</td>
@@ -362,7 +362,7 @@ background-color: red;
                                  <tr>
                                     <td>Chaayos</td>
                                     <td>₹600</td>
-                                    <td >while waiting and online class at Chaayos</td>
+                                    <td>while waiting and online class at Chaayos</td>
                                  </tr>
                                 </tbody>
                             </table>
@@ -386,15 +386,15 @@ background-color: red;
                     <tr>
                         <td>13/5/2024</td>
                         <td class="kb">Kendriye Bhandar
-                            <table border="5px" class="subtable2" >
-                                <th >
-                                    <tr class="thh">
+                            <table border="5px" class="subtable2">
+                                <tbody><tr><th>
+                                    </th></tr><tr class="thh">
                                         <td>Expenses</td>
                                         <td>Amount</td>
                                         <td>Details</td>
                                     </tr>
-                                </th>
-                                <tbody>
+                                
+                                </tbody><tbody>
                                     <tr>
                                         <td>Rice</td>
                                         <td>₹341</td>
@@ -424,12 +424,12 @@ background-color: red;
                                         <td>Biscuits</td>
                                         <td>₹100</td>
                                         <td>Biscuits</td>
-                                        <tr>
+                                        </tr><tr>
                                             <td>Moong Dal</td>
                                             <td>₹150</td>
                                             <td>Moong dal 2 packets</td>
                                         </tr>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
                         </td>
@@ -598,7 +598,7 @@ background-color: red;
                     <td>Dahi</td>
                     <td>₹72</td>
                     <td>Dahi for home</td>
-                  <tr>
+                  </tr><tr>
                     <td>23/5/2024</td>
                     <td>Tomato</td>
                     <td>₹60</td>
@@ -674,7 +674,7 @@ background-color: red;
                     <td>Dahi</td>
                     <td>₹72</td>
                     <td>Dahi for home</td>
-                  <tr>
+                  </tr><tr>
                     <td>26/5/2024</td>
                     <td>Metro card recharge</td>
                     <td>₹300</td>
@@ -792,5 +792,43 @@ background-color: red;
         </button>
        
     </div>
-   </body>
-</html>
+   <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
