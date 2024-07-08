@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="website icon" type="png" href="https://i.pinimg.com/236x/1e/1e/d0/1e1ed0385a28390bcbe6960416f98d86.jpg">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+        }         
+        img{
+            box-shadow: 5px 10px 35px 3px;
+            border-radius: 10px;
+            height: 600px;
+            margin-top: 120px;
+            position: relative;
+        }
+       .button{
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            border-radius: 20px;
+            border: none;
+            background: transparent;
+            font-weight: 600;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+        #button1{
+            width: 180px;
+            height: 45px;
+            top: 16%;
+            left: 30%;
+            rotate: 14deg;
+        }
+        #button2{
+            width: 100px;
+            height: 190px;
+            top: 38%;
+            left: 37%;
+        }
+        #button3{
+            top: 24%;
+            left: 43%;
+            height: 130px;
+        }
+        #button4{
+            top: 23%;
+            width: 120px;
+            height: 120px;
+            left: 53%;
+        }
+        #button5{
+            top: 38%;
+            height: 60px;
+            width: 170px;
+            left: 55%;
+        }
+        #button6{
+            top: 45%;
+            border-radius: 100%;
+            width: 280px;
+            height: 280px;
+            left: 43%;
+        }
+        #button7{
+            top: 28%;
+            left: 65%;
+        }
+        #button8{
+            top: 90%;
+            border-radius: none;
+            font-size: larger;
+            height: 70px;
+            width: 250px;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://m.media-amazon.com/images/I/8186g7plXaL.AC_UF1000,1000_QL80.jpg" alt="">
+
+    <button class="button" id="button1"></button>
+    <button class="button" id="button2"></button>
+    <button class="button" id="button3"></button>
+    <button class="button" id="button4"></button>
+    <button class="button" id="button5"></button>
+    <button class="button" id="button6"></button>
+    <button class="button" id="button7"></button>
+    <button class="button" id="button8"></button>
+
+    <script>
+        let buttons = document.querySelectorAll(".button");
+
+        let btn1=document.getElementById("button1")
+        let btn2=document.getElementById("button2")
+        let btn3=document.getElementById("button3")
+        let btn4=document.getElementById("button4")
+        let btn5=document.getElementById("button5")
+        let btn6=document.getElementById("button6")
+        let btn7=document.getElementById("button7")
+        let btn8=document.getElementById("button8")
+
+
+ btn1.addEventListener("click", function() {
+            let music1 = new Audio('crash-1-97700.mp3');
+            music1.play();
+        });
+
+        btn2.addEventListener("click", function() {
+            let music2 = new Audio('low-floor-tom-level-2-106160.mp3');
+            music2.play();
+        });
+
+        btn3.addEventListener("click", function() {
+            let music3 = new Audio('Medium-Tom-Drum-Hit-Level-5A-www.fesliyanstudios.com.mp3');
+            music3.play();
+        });
+
+        btn4.addEventListener("click", function() {
+            let music4 = new Audio('Floor-Tom-Drum-Hit-Level-7B-www.fesliyanstudios.com.mp3');
+            music4.play();
+        });
+
+        btn5.addEventListener("click",function(){
+            let music5 = new Audio('snare-112754.mp3');
+            music5.play();
+        });
+        btn6.addEventListener("click",function(){
+            let music6=new Audio('dance_kick3-92807.mp3');
+            music6.play();
+        });
+        btn7.addEventListener("click",function(){
+            let music7=new Audio('crash-cymbal-hit-140577.mp3');
+            music7.play();
+        });
+        btn8.addEventListener("click",function(){
+            let music8=new Audio('pornhub_intro_music.mp3');
+            music8.play();
+        })
+    </script>
+</body>
+</html>
