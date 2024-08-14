@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Divs with Hover to Unhide</title>
+    <style>
+        .outer-div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            position: relative;
+        }
+
+        .inner-div {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: rotate(360deg);
+            /* display: none; */
+            text-align: center;
+        }
+
+        .outer-div:hover .inner-div {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="outer-div">
+        Hover over me!
+        <div class="inner-div">Hello!</div>
+    </div>
+</body>
+</html>
