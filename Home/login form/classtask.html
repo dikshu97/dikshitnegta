@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Application Form</title>
+    <style>
+
+        .divform{
+            height: 700px;
+            width: 40%;
+            /* margin: auto; */
+            padding: 15px;
+            box-sizing: border-box;
+            border: 3px solid grey;
+            border-radius: 20px;
+            display: grid;
+            /* gap: 0px; */
+            /* align-items: start; */
+            /* justify-content: start; */
+            position: relative;
+            background-color: black;
+
+        }
+        button, input,label{
+            padding: 4px;
+        }
+        input{
+         font-family: sans-serif;
+         font-size: 15px;
+         text-align: center;
+         /* color: yellowgreen; */
+         background-color: whitesmoke;
+        }
+        button{
+            /* background-color: transparent; */
+            margin: 8px;
+            height: 35px;
+            font-family: sans-serif;
+            font-size: 17px;
+            border-radius: 15px;
+        }
+        button:hover{
+            background-color: deepskyblue;
+            color: whitesmoke;
+            border:3px solid grey;
+        }
+        h1{
+        margin: 5px;
+        color: aliceblue;
+        font-size: 32px;
+        }
+        label{
+            font-size: 17px;
+            color: whitesmoke;
+        }
+        img{
+            height: 90px;
+            width: 100px;
+            position: absolute;
+            right: 20px;
+            top: 00px;
+
+        }
+        .gender{
+            color: whitesmoke;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <form action="/action_page.php"></form>
+    <div class="divform">
+        
+        <h1>Manohar Orchard Chhajpur</h1>
+        <img src="MOC Logo (2).png" alt="">
+      <label class="class" for="name">Name</label>  
+      <input class="inputname" type="text" id="name" placeholder=" Enter your name" name="Enter Your name" required>
+      <label class="class" for="lastname">Last Name</label>
+      <input type="text" class="lname" id="lastname"
+      placeholder="Enter your passowrd" name="Enter your password" required>
+
+      <label class="class" for="mail">Email</label>
+      <input type="text" id="mail" placeholder="Enter your Email " name="Enter your email" class="mail" required  >
+
+      <label class="class" for="Contact">Contact Number</label>
+      <input type="number" id="Contact" placeholder="Enter your Contact Number" name="enter your number" class="number" required >
+
+      <label class="class" for="DOB">DOB</label>
+      <input type="datetime-local" id="DOB" class="dob" name="enter your birth date" required>
+
+      <label class="class" for="pswd">Passowrd</label>
+      <input type="password" placeholder="Enter your passowrd" class="pswd" id="pswd" required>
+
+      <label class="class"  for="cpswd">Confirm Password</label>
+      <input type="password" id="cpswd" class="cpswd" placeholder="Enter your passowrd" required>
+      <label >Gender</label>
+      <input class="gender" type="radio" name="Gender" >Male
+      <input class="gender" type="radio" name="Gender" >Female
+      <input class="gender" type="radio" name="Gender" >Others
+
+      <button class="button1">Submit</button>
+      <button class="button2">Reset</button>
+      
+    
+    </div>
+</form>
+</section>
+    
+</body>
+</html>
